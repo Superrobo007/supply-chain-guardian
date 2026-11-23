@@ -15,11 +15,13 @@ const PAGES = [
   { id: "overview", label: "Overview", icon: LayoutDashboard },
   { id: "findings", label: "Findings", icon: ListChecks },
   { id: "graph", label: "Risk map", icon: GitFork },
-  // { id: "remediation", label: "Remediation", icon: FileCheck2 },
-  // { id: "audit", label: "Policy & audit", icon: ScrollText },
+  { id: "remediation", label: "Remediation", icon: FileCheck2 },
+  { id: "audit", label: "Policy & audit", icon: ScrollText },
   { id: "scan", label: "New scan", icon: Radar },
 ] as const;
 type PageId = (typeof PAGES)[number]["id"];
+const HIDDEN = new Set<PageId>(["remediation", "audit"]);
+const NAV = PAGES.filter((p) => !HIDDEN.has(p.id));
 
 const readHash = (): PageId => {
   const h = location.hash.replace("#", "");
@@ -70,7 +72,7 @@ export default function App() {
           </div>
         </div>
         <nav className="flex flex-col gap-0.5 px-3">
-          {PAGES.map((p) => (
+          {NAV.map((p) => (
             <button key={p.id} onClick={() => go(p.id)}
               className={cn("flex items-center gap-2.5 rounded-lg px-3 py-2 text-left text-sm font-medium transition-colors",
                 page === p.id ? "bg-brand-soft text-brand" : "text-ink-2 hover:bg-slate-50 hover:text-ink")}>
@@ -105,7 +107,7 @@ export default function App() {
             <Button size="md" variant="primary" onClick={() => go("scan")}><Radar className="size-4" />Scan</Button>
           </div>
           <nav className="flex w-full gap-1 overflow-x-auto md:hidden">
-            {PAGES.map((p) => <button key={p.id} onClick={() => go(p.id)} className={cn("rounded-md px-2.5 py-1 text-xs font-medium", page === p.id ? "bg-brand-soft text-brand" : "text-ink-2")}>{p.label}</button>)}
+            {NAV.map((p) => <button key={p.id} onClick={() => go(p.id)} className={cn("rounded-md px-2.5 py-1 text-xs font-medium", page === p.id ? "bg-brand-soft text-brand" : "text-ink-2")}>{p.label}</button>)}
           </nav>
         </header>
         <main className="min-w-0 flex-1 overflow-y-auto p-6">{body}</main>

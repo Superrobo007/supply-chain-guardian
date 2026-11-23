@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Day 1 — Build the Guardian's Eyes</title>
+<style>
+@font-face{font-family:"InterV";src:url("../dashboard/node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2") format("woff2");font-weight:100 900}
+@font-face{font-family:"MonoV";src:url("../dashboard/node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2") format("woff2");font-weight:100 800}
+:root{--ink:#111827;--ink2:#4b5563;--ink3:#8a93a3;--line:#e2e6ee;--brand:#4f46e5;--brandsoft:#eef0ff;--crit:#e11d48;--high:#ea580c;--ok:#059669;--human:#b45309;--code:#f3f5f9}
+@page{size:A4;margin:16mm 15mm 18mm 15mm}
+*{box-sizing:border-box}
+body{font-family:"InterV",system-ui,sans-serif;color:var(--ink);font-size:10.3pt;line-height:1.5;margin:0}
+h1{font-size:25pt;line-height:1.1;margin:0 0 4px;letter-spacing:-.02em}
+h2{font-size:14pt;margin:20px 0 6px;padding-top:8px;border-top:2px solid var(--ink);letter-spacing:-.01em;break-after:avoid}
+h2 .t{color:var(--ink3);font-weight:500;font-size:10pt;margin-left:8px}
+h3{font-size:11pt;margin:12px 0 4px;break-after:avoid}
+p{margin:5px 0}
+.eyebrow{font-family:"MonoV",monospace;font-size:8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+.lede{font-size:11.5pt;color:var(--ink2);max-width:165mm}
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:12px 0}
+.kpi{border:1px solid var(--line);border-radius:8px;padding:7px 9px}
+.kpi b{display:block;font-size:16pt;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.kpi span{font-size:8pt;color:var(--ink3)}
+.say{border-left:3px solid var(--brand);background:var(--brandsoft);padding:6px 10px;margin:6px 0;border-radius:0 6px 6px 0;break-inside:avoid}
+.say::before{content:"SAY";display:block;font-family:"MonoV",monospace;font-size:7.5pt;letter-spacing:.14em;color:var(--brand);font-weight:700;margin-bottom:1px}
+.show{border-left:3px solid var(--ok);background:#ecfdf5;padding:6px 10px;margin:6px 0;border-radius:0 6px 6px 0;break-inside:avoid}
+.show::before{content:"SHOW";display:block;font-family:"MonoV",monospace;font-size:7.5pt;letter-spacing:.14em;color:var(--ok);font-weight:700;margin-bottom:1px}
+.tech{border-left:3px solid var(--ink3);background:#f8fafc;padding:6px 10px;margin:6px 0;border-radius:0 6px 6px 0;break-inside:avoid}
+.tech::before{content:"IF ASKED (TECHNICAL)";display:block;font-family:"MonoV",monospace;font-size:7.5pt;letter-spacing:.14em;color:var(--ink2);font-weight:700;margin-bottom:1px}
+code{font-family:"MonoV",monospace;font-size:8.6pt;background:var(--code);padding:0 3px;border-radius:3px}
+pre{font-family:"MonoV",monospace;font-size:8.3pt;background:#0f172a;color:#e2e8f0;padding:7px 10px;border-radius:6px;white-space:pre-wrap;word-break:break-all;margin:5px 0;break-inside:avoid}
+ul{margin:4px 0;padding-left:16px} li{margin:2px 0}
+table{border-collapse:collapse;width:100%;font-size:9pt;margin:6px 0;break-inside:avoid}
+th,td{text-align:left;vertical-align:top;padding:4px 6px;border-bottom:1px solid var(--line)}
+th{border-bottom:1.5px solid var(--ink);font-size:8.5pt}
+figure{margin:10px 0 0;break-inside:avoid}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-size:8.5pt;color:var(--ink2);margin-top:4px}
+.legend{display:flex;gap:14px;font-size:8pt;color:var(--ink2);margin-top:4px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+.pb{break-before:page}
+.qa dt{font-weight:650;margin-top:6px} .qa dd{margin:1px 0 0 0;color:var(--ink2)}
+.qa{break-inside:auto}
+.time{float:right;font-family:"MonoV",monospace;font-size:8pt;color:var(--ink3);font-weight:500;margin-top:4px}
+.nums{font-variant-numeric:tabular-nums}
+</style></head>
+<body>
+
+<div class="eyebrow">Supply Chain Guardian · Bosch BGSW × Amrita hackathon · Problem statement 1</div>
+<h1>Day 1: Build the Guardian's Eyes</h1>
+<p class="lede">Presentation script and architecture. Checkpoint question: <b>“Show us what is in the application, what changed, and what appears risky.”</b> Suggested length 8–10 minutes. Every number comes from the Juice Shop run.</p>
+
+<div class="kpis nums">
+  <div class="kpi"><b>2,111</b><span>packages mapped</span></div>
+  <div class="kpi"><b>161</b><span>chosen directly</span></div>
+  <div class="kpi"><b>58</b><span>findings (2 critical, 7 high)</span></div>
+  <div class="kpi"><b>23 / 39</b><span>package findings reachable</span></div>
+  <div class="kpi"><b>~5 s</b><span>full Day 1 scan</span></div>
+</div>
+
+<figure>
+<svg viewBox="0 0 1000 690" role="img" aria-label="Day 1 architecture: repository inputs, public advisory data and application source code feed the Discover, Detect and Score stages; every stage writes facts into a hash-chained evidence ledger; the outputs are the SBOM, the dependency graph, ranked findings with evidence and the policy build gate." font-family="InterV, system-ui, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#111827"/></marker>
+  </defs>
+  <!-- row A: inputs -->
+  <text x="20" y="14" font-size="11" font-weight="700" fill="#111827">Your repository</text>
+  <g font-size="11" fill="#111827" text-anchor="middle">
+    <rect x="20" y="22" width="145" height="30" rx="5" fill="#fff" stroke="#9ca3af"/><text x="92" y="41">package.json + lockfiles</text>
+    <rect x="175" y="22" width="145" height="30" rx="5" fill="#fff" stroke="#9ca3af"/><text x="247" y="41">requirements / poetry</text>
+    <rect x="20" y="60" width="145" height="30" rx="5" fill="#fff" stroke="#9ca3af"/><text x="92" y="79">Dockerfiles</text>
+    <rect x="175" y="60" width="145" height="30" rx="5" fill="#fff" stroke="#9ca3af"/><text x="247" y="79">GitHub workflows</text>
+  </g>
+  <rect x="350" y="22" width="300" height="68" rx="6" fill="none" stroke="#6b7280" stroke-dasharray="5 4"/>
+  <text x="500" y="45" font-size="12" font-weight="700" text-anchor="middle" fill="#111827">Public data (read-only, cached)</text>
+  <text x="500" y="63" font-size="10.5" text-anchor="middle" fill="#4b5563">GitHub Advisory DB via npm bulk API</text>
+  <text x="500" y="79" font-size="10.5" text-anchor="middle" fill="#4b5563">npm registry history · PyPI / OSV</text>
+  <rect x="680" y="22" width="300" height="68" rx="6" fill="#fff" stroke="#9ca3af"/>
+  <text x="830" y="45" font-size="12" font-weight="700" text-anchor="middle" fill="#111827">Application source code</text>
+  <text x="830" y="63" font-size="10.5" text-anchor="middle" fill="#4b5563">.ts / .js / .py, tests excluded</text>
+  <text x="830" y="79" font-size="10.5" text-anchor="middle" fill="#4b5563">used for reachability only</text>
+
+  <g stroke="#111827" stroke-width="1.4" fill="none">
+    <line x1="170" y1="90" x2="170" y2="128" marker-end="url(#a)"/>
+    <line x1="500" y1="90" x2="500" y2="128" marker-end="url(#a)"/>
+    <line x1="830" y1="90" x2="830" y2="128" marker-end="url(#a)"/>
+  </g>
+  <text x="178" y="114" font-size="10" fill="#4b5563">parse</text>
+  <text x="508" y="114" font-size="10" fill="#4b5563">advisories, versions, metadata</text>
+  <text x="838" y="114" font-size="10" fill="#4b5563">import scan</text>
+
+  <!-- row B: stages -->
+  <g>
+    <rect x="20" y="130" width="300" height="168" rx="8" fill="#eef0ff" stroke="#4f46e5" stroke-width="1.6"/>
+    <text x="36" y="156" font-size="14.5" font-weight="800" fill="#111827">1 · DISCOVER</text>
+    <text x="36" y="174" font-size="10.5" fill="#4f46e5" font-weight="600">guardian/discover.py · sbom.py</text>
+    <g font-size="11" fill="#111827">
+      <text x="36" y="198">• Manifests + lockfiles (v3)</text>
+      <text x="36" y="217">• Replay npm node_modules resolution</text>
+      <text x="36" y="236">   → who pulled in whom (graph)</text>
+      <text x="36" y="255">• Images: tag vs @sha256 digest, USER</text>
+      <text x="36" y="274">• Actions: SHA pin, triggers, curl | sh</text>
+      <text x="36" y="290" font-size="10" fill="#4b5563">2,111 packages · 3 Dockerfiles · 16 workflows</text>
+    </g>
+  </g>
+  <g>
+    <rect x="350" y="130" width="300" height="168" rx="8" fill="#eef0ff" stroke="#4f46e5" stroke-width="1.6"/>
+    <text x="366" y="156" font-size="14.5" font-weight="800" fill="#111827">2 · DETECT</text>
+    <text x="366" y="174" font-size="10.5" fill="#4f46e5" font-weight="600">guardian/detect.py · semver.py</text>
+    <g font-size="11" fill="#111827">
+      <text x="366" y="198">• Advisory lookup, 250 per batch</text>
+      <text x="366" y="217">• Semver range match + safe versions</text>
+      <text x="366" y="236">• 9 non-CVE checks: typosquat, version</text>
+      <text x="366" y="255">   anomaly, install scripts, images, CI…</text>
+      <text x="366" y="274">• Lockfile diff vs baseline (--base-lock)</text>
+      <text x="366" y="290" font-size="10" fill="#4b5563">21 CVE findings · 37 non-CVE findings</text>
+    </g>
+  </g>
+  <g>
+    <rect x="680" y="130" width="300" height="168" rx="8" fill="#eef0ff" stroke="#4f46e5" stroke-width="1.6"/>
+    <text x="696" y="156" font-size="14.5" font-weight="800" fill="#111827">3 · SCORE</text>
+    <text x="696" y="174" font-size="10.5" fill="#4f46e5" font-weight="600">guardian/reachability.py · risk.py</text>
+    <g font-size="11" fill="#111827">
+      <text x="696" y="198">• Is it imported? Which symbols?</text>
+      <text x="696" y="217">• risk = severity × reachability</text>
+      <text x="696" y="236">            × exposure × environment</text>
+      <text x="696" y="255">• Critical ≥ 9 · High ≥ 7 · Medium ≥ 4</text>
+      <text x="696" y="274">• Confidence from evidence coverage</text>
+      <text x="696" y="290" font-size="10" fill="#4b5563">every factor stored → explainable</text>
+    </g>
+  </g>
+  <g stroke="#111827" stroke-width="1.4">
+    <line x1="320" y1="214" x2="348" y2="214" marker-end="url(#a)"/>
+    <line x1="650" y1="214" x2="678" y2="214" marker-end="url(#a)"/>
+  </g>
+  <text x="334" y="207" font-size="9.5" text-anchor="middle" fill="#4b5563">graph</text>
+  <text x="664" y="207" font-size="9.5" text-anchor="middle" fill="#4b5563">findings</text>
+
+  <!-- ledger -->
+  <g stroke="#111827" stroke-width="1.4">
+    <line x1="170" y1="298" x2="170" y2="346" marker-end="url(#a)"/>
+    <line x1="500" y1="298" x2="500" y2="346" marker-end="url(#a)"/>
+    <line x1="830" y1="298" x2="830" y2="346" marker-end="url(#a)"/>
+  </g>
+  <text x="178" y="326" font-size="10" fill="#4b5563">writes facts</text>
+  <text x="508" y="326" font-size="10" fill="#4b5563">writes facts</text>
+  <text x="838" y="326" font-size="10" fill="#4b5563">writes facts</text>
+  <rect x="20" y="348" width="960" height="78" rx="8" fill="#fff" stroke="#111827" stroke-width="2"/>
+  <text x="500" y="374" font-size="14" font-weight="800" text-anchor="middle" fill="#111827">EVIDENCE LEDGER (ledger.jsonl)</text>
+  <text x="500" y="394" font-size="11" text-anchor="middle" fill="#4b5563">every fact gets an ID (E-0001 …): manifest, lockfile, advisory, registry, reachability</text>
+  <text x="500" y="412" font-size="11" text-anchor="middle" fill="#4b5563">each record stores the SHA-256 of the previous one → editing history is detectable</text>
+  <!-- chain glyph -->
+  <g fill="none" stroke="#4f46e5" stroke-width="1.6">
+    <rect x="40" y="370" width="30" height="16" rx="3"/><rect x="78" y="370" width="30" height="16" rx="3"/><rect x="116" y="370" width="30" height="16" rx="3"/>
+    <line x1="70" y1="378" x2="78" y2="378"/><line x1="108" y1="378" x2="116" y2="378"/>
+    <rect x="854" y="370" width="30" height="16" rx="3"/><rect x="892" y="370" width="30" height="16" rx="3"/><rect x="930" y="370" width="30" height="16" rx="3"/>
+    <line x1="884" y1="378" x2="892" y2="378"/><line x1="922" y1="378" x2="930" y2="378"/>
+  </g>
+
+  <!-- outputs -->
+  <line x1="500" y1="426" x2="500" y2="456" stroke="#111827" stroke-width="1.4" marker-end="url(#a)"/>
+  <text x="508" y="446" font-size="10" fill="#4b5563">report builder</text>
+  <g font-size="11" text-anchor="middle" fill="#111827">
+    <rect x="20" y="458" width="225" height="62" rx="6" fill="#fff" stroke="#9ca3af"/>
+    <text x="132" y="483" font-weight="700" font-size="12">SBOM</text><text x="132" y="501" fill="#4b5563">CycloneDX 1.6 · sbom.cdx.json</text>
+    <rect x="265" y="458" width="225" height="62" rx="6" fill="#fff" stroke="#9ca3af"/>
+    <text x="377" y="483" font-weight="700" font-size="12">Dependency graph</text><text x="377" y="501" fill="#4b5563">graph.json · dashboard risk map</text>
+    <rect x="510" y="458" width="225" height="62" rx="6" fill="#fff" stroke="#9ca3af"/>
+    <text x="622" y="483" font-weight="700" font-size="12">Ranked findings + evidence</text><text x="622" y="501" fill="#4b5563">report.md / .html / .json</text>
+    <rect x="755" y="458" width="225" height="62" rx="6" fill="#fff1f2" stroke="#e11d48" stroke-width="1.6"/>
+    <text x="867" y="483" font-weight="700" font-size="12" fill="#be123c">Build gate: BLOCKED</text><text x="867" y="501" fill="#4b5563">policy/guardian.rego · 3 deny, 17 warn</text>
+  </g>
+
+  <!-- tamper side-path -->
+  <rect x="20" y="552" width="960" height="118" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="36" y="575" font-size="12.5" font-weight="800" fill="#111827">“WHAT CHANGED?” — lockfile drift detection</text>
+  <g font-size="11" fill="#111827" text-anchor="middle">
+    <rect x="36" y="590" width="190" height="52" rx="6" fill="#fff" stroke="#9ca3af"/>
+    <text x="131" y="611" font-weight="700">baseline lockfile</text><text x="131" y="628" fill="#4b5563">known-good snapshot</text>
+    <rect x="36" y="590" width="0" height="0"/>
+    <rect x="290" y="590" width="190" height="52" rx="6" fill="#fff" stroke="#9ca3af"/>
+    <text x="385" y="611" font-weight="700">current lockfile</text><text x="385" y="628" fill="#4b5563">what will be installed</text>
+    <rect x="544" y="590" width="190" height="52" rx="6" fill="#eef0ff" stroke="#4f46e5"/>
+    <text x="639" y="611" font-weight="700">per-package diff</text><text x="639" y="628" fill="#4b5563">added · removed · modified</text>
+    <rect x="798" y="590" width="166" height="52" rx="6" fill="#fff1f2" stroke="#e11d48"/>
+    <text x="881" y="609" font-weight="700" fill="#be123c">lockfile_drift</text><text x="881" y="625" fill="#4b5563" font-size="10">hash swapped w/o version</text><text x="881" y="638" fill="#4b5563" font-size="10">non-registry URL + script</text>
+  </g>
+  <g stroke="#111827" stroke-width="1.4">
+    <line x1="226" y1="616" x2="288" y2="616" marker-end="url(#a)" stroke-dasharray="4 3"/>
+    <line x1="480" y1="616" x2="542" y2="616" marker-end="url(#a)"/>
+    <line x1="734" y1="616" x2="796" y2="616" marker-end="url(#a)"/>
+  </g>
+  <text x="257" y="608" font-size="9.5" text-anchor="middle" fill="#4b5563">compare</text>
+  <text x="511" y="608" font-size="9.5" text-anchor="middle" fill="#4b5563">diff</text>
+  <text x="765" y="608" font-size="9.5" text-anchor="middle" fill="#4b5563">flags</text>
+  <text x="36" y="660" font-size="10" fill="#4b5563">Demo: tamper_lockfile.py simulates an artifact swap and an injected package (event-stream pattern). Both caught; gate goes from 3 to 5 deny.</text>
+</svg>
+<figcaption><b>Day 1 architecture.</b> Everything on Day 1 is deterministic code: no AI is needed, and every result is reproducible. Facts flow into one hash-chained ledger, which the Day 2 AI agents must cite.</figcaption>
+<div class="legend"><span><i style="background:#eef0ff;border:1px solid #4f46e5"></i>pipeline stage</span><span><i style="background:#fff;border:1px solid #9ca3af"></i>input / output</span><span><i style="background:#fff1f2;border:1px solid #e11d48"></i>blocking result</span><span><i style="border:1px dashed #6b7280"></i>external, read-only</span></div>
+</figure>
+
+<h2 class="pb">0 · Opening <span class="t">30 seconds</span></h2>
+<div class="say">“Modern applications are mostly assembled, not written. Our target, OWASP Juice Shop, has 161 packages its developers chose, but it actually ships with <b>2,111</b>. The other 1,950 came in automatically because those packages needed them. Day 1 answers three questions: what's really inside, what changed, and what looks risky. Every answer comes with evidence we can point to.”</div>
+<div class="say">“One principle runs through everything. Plain code collects every fact. The AI is only allowed to reason about facts the code has already recorded, and it has to cite them. That's how we prevent made-up answers.”</div>
+
+<h2>1 · Why this target repository <span class="t">30 seconds</span></h2>
+<div class="say">“We chose OWASP Juice Shop because it meets every requirement in the brief. It's free and open source. It's containerised with a multi-stage Dockerfile. It has 16 GitHub Actions workflows, so there's a real CI/CD pipeline to inspect. It has two npm projects, a Node server and an Angular frontend, with a realistic tree of direct and transitive dependencies. And it contains real supply-chain problems, including a typosquat.”</div>
+<div class="say">“The Guardian isn't hard-coded to Juice Shop. The same pipeline scanned PyGoat, a Python app, and Express, which doesn't even commit a lockfile.”</div>
+
+<h2>2 · Step 1: Discover components <span class="t">1.5 minutes</span></h2>
+<div class="say">“First we read every package manifest and lockfile. <code>package.json</code> is what the developer <i>asked for</i>, usually a version range. <code>package-lock.json</code> is what <i>actually got installed</i>: the exact version, the download URL, and a sha512 integrity hash for every package.”</div>
+<div class="say">“To know who pulled in whom, we re-implemented npm's resolution rule. When package A needs B, npm looks in A's own <code>node_modules</code> folder first, then walks up the parent folders to the root. Replaying that rule rebuilds the real dependency tree, so any package can be traced back to the decision that introduced it.”</div>
+<div class="say">“Juice Shop doesn't commit its lockfiles, so we generated them with <code>npm install --package-lock-only --ignore-scripts</code>. That resolves versions <b>without running any package code</b>.”</div>
+<div class="tech"><ul>
+<li>Lockfile v3 format; the dev, optional and <code>hasInstallScript</code> flags are kept for each package.</li>
+<li>NetworkX directed graph: each node is a package at a lockfile path, each edge carries the version range the parent asked for.</li>
+<li>Python projects go through a second adapter (<code>eco_pypi.py</code>) that reads requirements, poetry, uv and Pipfile files.</li></ul></div>
+<div class="show">Run the scan and point at <code>2111 packages, 161 direct, 3 Dockerfiles, 16 workflows</code>.
+<pre>python -m guardian.cli --out out-demo day1 --target targets/juice-shop --investigate 8</pre></div>
+
+<h2>3 · Step 2: Build the supply chain view <span class="t">1.5 minutes</span></h2>
+<div class="say">“Everything goes into a <b>CycloneDX 1.6 SBOM</b>, the industry-standard software bill of materials. Each component has a package URL, its version, its integrity hash, where it was downloaded from, whether it's a dev dependency, and the full dependency relationships.”</div>
+<div class="say">“The brief asks us to inspect at least one container image or CI/CD workflow. We inspect all of them. For Dockerfiles: every base image, whether it's pinned to an unchangeable <code>@sha256</code> digest or only a movable tag, tools installed during the build, and which user the container runs as. For GitHub Actions: every third-party action, whether it's pinned to a commit SHA or a tag someone could move, plus risky triggers like <code>pull_request_target</code> and <code>curl | sh</code>. These go into the SBOM too, because the build pipeline is part of the supply chain.”</div>
+<div class="show">Show the SBOM file. In the dashboard: Overview → <b>Components 2,111</b> and <b>Containers &amp; CI: 5 base images, 94 actions</b>.
+<pre>head -c 1500 out-demo/sbom.cdx.json</pre></div>
+
+<h2>4 · Step 3: Detect known vulnerabilities <span class="t">1.5 minutes</span></h2>
+<div class="say">“We send all 2,111 name and version pairs, in batches of 250, to the <b>GitHub Advisory Database</b> through npm's bulk advisory API. Each advisory gives an affected version range such as <code>&lt;2.0.0-beta</code>, and our semver evaluator checks whether the installed version falls inside it.”</div>
+<div class="say">“For each match we also compute fix candidates from the registry's full version history: the smallest safe version on the same major line, the smallest safe version overall, and the latest safe version. ‘Safe’ means it falls inside <i>no</i> known advisory range. We also record the parent's constraint, for example express-jwt requiring jsonwebtoken <code>~0.1.0</code>. That tells us whether a simple refresh fixes it or the parent has to change too.”</div>
+<table class="nums">
+<tr><th>Package</th><th>Issue</th><th>Priority</th><th>Why it matters</th></tr>
+<tr><td><code>jsonwebtoken@0.4.0</code></td><td>Verification bypass</td><td style="color:var(--crit);font-weight:650">Critical</td><td>Imported in <code>lib/insecurity.ts</code></td></tr>
+<tr><td><code>marsdb@0.6.11</code></td><td>Command injection</td><td style="color:var(--crit);font-weight:650">Critical</td><td>Direct dependency, no safe version</td></tr>
+<tr><td><code>jsonwebtoken@0.1.0</code></td><td>Verification bypass</td><td style="color:var(--high);font-weight:650">High</td><td>Transitive, nested in <code>express-jwt</code>, traced to its source</td></tr>
+<tr><td><code>sanitize-html@1.4.2</code></td><td>XSS, ReDoS</td><td style="color:var(--high);font-weight:650">High</td><td>Imported in 2 files; smallest safe version 2.18.1</td></tr>
+</table>
+<div class="show">Dashboard → Findings → click <b>sanitize-html</b>: the advisory table, “Smallest safe version: 2.18.1”, and the dependency path.</div>
+
+<h2>5 · Step 4: Detect suspicious changes <span class="t">2 minutes · strongest part</span></h2>
+<div class="say">“Known CVEs are only half the story. Real supply-chain attacks like event-stream, ua-parser-js, Codecov and tj-actions had <b>no CVE</b> when they hit. So we run nine extra checks.”</div>
+<table>
+<tr><th>Check</th><th>How it works</th><th>Found in Juice Shop</th></tr>
+<tr><td>Typosquat</td><td>Damerau-Levenshtein distance of 1 from a popular package; registry metadata of both stored as evidence</td><td><code>ngy-cookie</code> vs the real <code>ngx-cookie</code></td></tr>
+<tr><td>Version anomaly</td><td>A version segment of 1000 or more, typical of dependency-confusion payloads (date versions excluded)</td><td><code>ngy-cookie@6.0.1000</code></td></tr>
+<tr><td>Install scripts</td><td>Code run during <code>npm install</code>; scanned for curl, pipe-to-shell, base64, env access</td><td>16, matched to normal build patterns</td></tr>
+<tr><td>Lockfile hygiene</td><td>Not committed; non-registry URL; missing integrity hash</td><td>Both lockfiles uncommitted</td></tr>
+<tr><td>Unpinned images</td><td>Tag without <code>@sha256</code> digest</td><td>5, including <code>node:24</code></td></tr>
+<tr><td>Floating build tools</td><td><code>npm install -g x@^1</code> inside the image build</td><td>typescript, cyclonedx</td></tr>
+<tr><td>Unpinned CI actions</td><td>Tag instead of a 40-character commit SHA</td><td>7</td></tr>
+<tr><td>Risky CI</td><td><code>curl … | sh</code>, <code>pull_request_target</code></td><td>Heroku installer piped to sh</td></tr>
+<tr><td>Lockfile drift</td><td>Diff of two lockfiles</td><td>See the demo below</td></tr>
+</table>
+<div class="say">“The checkpoint asks what <i>changed</i>. We simulate a real attack, locally only. We take the clean lockfile and tamper with it the way attackers do. First, we change a package's integrity hash <i>without changing its version</i>, which means the artifact was swapped. Second, we inject a new package downloaded from a non-registry URL that runs an install script. That's the event-stream / flatmap-stream pattern.”</div>
+<div class="show">Point at <code>lockfile diff: 2 changes</code>. Both are caught as <code>lockfile_drift</code>, and the build gate goes from 3 to <b>5 deny</b>.
+<pre>python scenarios/tamper_lockfile.py targets/juice-shop targets/juice-shop-tampered
+python -m guardian.cli --out out-tampered day1 --target targets/juice-shop-tampered --base-lock targets/juice-shop.base-package-lock.json --investigate 3</pre></div>
+
+<h2>6 · Step 5: Present evidence and initial risk <span class="t">1.5 minutes</span></h2>
+<div class="say">“For every finding we show the five things the brief asks for: what was detected, which component, its dependency path, the supporting evidence, and the initial risk level.”</div>
+<div class="say">“Risk isn't just CVSS. We scan the app's own source code for imports, excluding tests, to see whether the package is actually used and which functions it calls. A CVSS 9.8 bug in a test helper ranks below a 7.5 bug in code we actually call. Of 39 package findings, <b>23 are reachable</b> by app code.”</div>
+<table class="nums">
+<tr><th>Factor</th><th>Values</th></tr>
+<tr><td>Severity</td><td>CVSS score from the advisory (or a mapped severity)</td></tr>
+<tr><td>Reachability</td><td>imported by app 1.0 · via an imported package 0.85 · not referenced 0.55 · dev/test only 0.3</td></tr>
+<tr><td>Exposure</td><td>network-facing server 1.0 · browser bundle 0.8</td></tr>
+<tr><td>Environment</td><td>production 1.0 · dev-only 0.4</td></tr>
+<tr><td>Override</td><td>typosquat, tampering, malicious scripts get full weight: they cause damage at install time</td></tr>
+</table>
+<div class="say">“Every fact (an advisory, a registry lookup, an import found in code) is written to an evidence ledger with an ID like E-0142. Each record contains the SHA-256 hash of the one before it. Editing any past record breaks the chain. Our run has 268 records with the chain intact. On Day 2, the AI agents are only allowed to cite these IDs.”</div>
+<div class="say">“A policy written in Rego, Open Policy Agent's rule language, turns findings into a decision. Juice Shop is <b>BLOCKED</b>: two critical reachable vulnerabilities and one typosquat, plus 17 warnings.”</div>
+<div class="show">Dashboard → Findings → <b>ngy-cookie</b>: “Why this score”, “How it got into the app”, then the <b>Evidence</b> tab with the raw ledger records. Then <b>Risk map</b>: the graph of every risky package and its path into the app.</div>
+
+<h2>7 · Close Day 1 <span class="t">30 seconds</span></h2>
+<div class="say">“To recap. We know what's in the app: 2,111 components, an SBOM, and a full graph including containers and CI. We know what changed: lockfile tampering caught by diff. We know what's risky: 58 findings, 2 critical and 7 high, ranked by whether they actually reach our code, with every claim backed by tamper-evident evidence. Day 1 is visibility and detection. Day 2 turns this into verified fixes, with a human approving each one.”</div>
+
+<h2>Likely judge questions</h2>
+<dl class="qa">
+<dt>How is this different from <code>npm audit</code>?</dt><dd><code>npm audit</code> lists CVEs. We add reachability, dependency paths with parent constraints, nine non-CVE attack checks, container and CI inspection, lockfile tampering detection, and tamper-evident evidence.</dd>
+<dt>Did you run any package code?</dt><dd>No. Everything uses <code>--ignore-scripts</code>, and we only read files and registry metadata.</dd>
+<dt>How do you avoid false positives?</dt><dd>We compare scoped names only with other scoped names, so <code>@simplewebauthn/server</code> isn't flagged as a fake <code>semver</code>. A nested copy of a package isn't counted as reachable just because the app imports the top-level copy. Date-based versions like <code>2022.12.7</code> aren't treated as anomalies.</dd>
+<dt>Is reachability exact?</dt><dd>It works at the import level and records which functions are used. Function-level call-graph analysis is the next step, and saying that openly is a strength.</dd>
+<dt>Where is the AI on Day 1?</dt><dd>Day 1 is deliberately plain code, so it's fast, reproducible and verifiable. The AI agents use these facts on Day 2. Without an API key they run in offline mode, which uses rules instead of a model.</dd>
+<dt>Does it work on other repositories?</dt><dd>Yes: any npm or Python repo, plus every Dockerfile and GitHub workflow. Show the <b>New scan</b> page with a GitHub URL.</dd>
+</dl>
+
+<h2>Command sheet</h2>
+<pre>source .venv/bin/activate
+python -m guardian.cli --out out-demo day1 --target targets/juice-shop --investigate 8
+head -c 1500 out-demo/sbom.cdx.json
+python scenarios/tamper_lockfile.py targets/juice-shop targets/juice-shop-tampered
+python -m guardian.cli --out out-tampered day1 --target targets/juice-shop-tampered --base-lock targets/juice-shop.base-package-lock.json --investigate 3
+open out-demo/report.html
+python -m guardian.cli dashboard</pre>
+</body></html>
