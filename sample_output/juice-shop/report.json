@@ -1,0 +1,5036 @@
+{
+ "generated": 1795424344.5829675,
+ "ai_mode": "offline-deterministic",
+ "inventory": {
+  "app": "juice-shop",
+  "components": 2111,
+  "direct": 161,
+  "projects": [
+   {
+    "project": "frontend",
+    "manifest": "frontend/package.json",
+    "lockfile": "frontend/package-lock.json",
+    "lock_committed": false,
+    "direct": {
+     "@angular/animations": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/build": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/cdk": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/cli": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/common": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/compiler": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/compiler-cli": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/core": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/forms": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/material": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/platform-browser": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@angular/router": {
+      "scope": "prod",
+      "range": "^22.0.1"
+     },
+     "@codemirror/lang-javascript": {
+      "scope": "prod",
+      "range": "^6.2.5"
+     },
+     "@codemirror/lang-json": {
+      "scope": "prod",
+      "range": "^6.0.2"
+     },
+     "@codemirror/lang-yaml": {
+      "scope": "prod",
+      "range": "^6.1.2"
+     },
+     "@codemirror/merge": {
+      "scope": "prod",
+      "range": "^6.12.0"
+     },
+     "@cyclonedx/cyclonedx-esbuild": {
+      "scope": "prod",
+      "range": "^1.0.0"
+     },
+     "@fortawesome/fontawesome-svg-core": {
+      "scope": "prod",
+      "range": "~1.2.30"
+     },
+     "@fortawesome/free-brands-svg-icons": {
+      "scope": "prod",
+      "range": "^5.14.0"
+     },
+     "@fortawesome/free-regular-svg-icons": {
+      "scope": "prod",
+      "range": "^5.14.0"
+     },
+     "@fortawesome/free-solid-svg-icons": {
+      "scope": "prod",
+      "range": "^5.14.0"
+     },
+     "@ngx-translate/core": {
+      "scope": "prod",
+      "range": "^17.0.0"
+     },
+     "@ngx-translate/http-loader": {
+      "scope": "prod",
+      "range": "^17.0.0"
+     },
+     "@simplewebauthn/browser": {
+      "scope": "prod",
+      "range": "^14.0.0"
+     },
+     "@wagmi/core": {
+      "scope": "prod",
+      "range": "^0.5.8"
+     },
+     "angularx-qrcode": {
+      "scope": "prod",
+      "range": "^21.0.5"
+     },
+     "canvas-confetti": {
+      "scope": "prod",
+      "range": "^1.9.3"
+     },
+     "codemirror": {
+      "scope": "prod",
+      "range": "^6.0.2"
+     },
+     "cookieconsent": {
+      "scope": "prod",
+      "range": "^3.1.1"
+     },
+     "ethers": {
+      "scope": "prod",
+      "range": "^5.7.2"
+     },
+     "flag-icons": {
+      "scope": "prod",
+      "range": "^6.9.2"
+     },
+     "font-mfizz": {
+      "scope": "prod",
+      "range": "^2.4.1"
+     },
+     "jwt-decode": {
+      "scope": "prod",
+      "range": "^4.0.0"
+     },
+     "lodash-es": {
+      "scope": "prod",
+      "range": "^4.17.21"
+     },
+     "material-icons": {
+      "scope": "prod",
+      "range": "^1.13.14"
+     },
+     "ng-gallery": {
+      "scope": "prod",
+      "range": "^12.0.0"
+     },
+     "ng2-file-upload": {
+      "scope": "prod",
+      "range": "^10.0.0"
+     },
+     "ngx-window-token": {
+      "scope": "prod",
+      "range": "^7.0.0"
+     },
+     "ngy-cookie": {
+      "scope": "prod",
+      "range": "^6.0.0"
+     },
+     "rxjs": {
+      "scope": "prod",
+      "range": "7.8.2"
+     },
+     "sass": {
+      "scope": "prod",
+      "range": "^1.86.3"
+     },
+     "snarkdown": {
+      "scope": "prod",
+      "range": "^1.2.2"
+     },
+     "socket.io-client": {
+      "scope": "prod",
+      "range": "^4.8.4"
+     },
+     "solidity-browser-compiler": {
+      "scope": "prod",
+      "range": "^1.1.0"
+     },
+     "tslib": {
+      "scope": "prod",
+      "range": "^2.5.0"
+     },
+     "typescript": {
+      "scope": "prod",
+      "range": "~6.0.3"
+     },
+     "zone.js": {
+      "scope": "prod",
+      "range": "~0.15.0"
+     },
+     "@angular/language-service": {
+      "scope": "dev",
+      "range": "^22.0.1"
+     },
+     "@eslint/js": {
+      "scope": "dev",
+      "range": "9.33.0"
+     },
+     "@types/express-serve-static-core": {
+      "scope": "dev",
+      "range": "^4.17.9"
+     },
+     "@types/jwt-decode": {
+      "scope": "dev",
+      "range": "^2.2.1"
+     },
+     "@types/node": {
+      "scope": "dev",
+      "range": "^26.0.1"
+     },
+     "@types/socket.io-client": {
+      "scope": "dev",
+      "range": "^1.4.33"
+     },
+     "@vitest/coverage-v8": {
+      "scope": "dev",
+      "range": "^4.1.2"
+     },
+     "angular-eslint": {
+      "scope": "dev",
+      "range": "^22.0.0"
+     },
+     "esbuild-visualizer": {
+      "scope": "dev",
+      "range": "^0.7.0"
+     },
+     "eslint": {
+      "scope": "dev",
+      "range": "^9.33.0"
+     },
+     "jsdom": {
+      "scope": "dev",
+      "range": "^29.0.1"
+     },
+     "stylelint": {
+      "scope": "dev",
+      "range": "^16.10.0"
+     },
+     "stylelint-config-sass-guidelines": {
+      "scope": "dev",
+      "range": "^12.1.0"
+     },
+     "stylelint-scss": {
+      "scope": "dev",
+      "range": "^6.0.0"
+     },
+     "typescript-eslint": {
+      "scope": "dev",
+      "range": "^8.42.0"
+     },
+     "vitest": {
+      "scope": "dev",
+      "range": "^4.1.1"
+     }
+    }
+   },
+   {
+    "project": ".",
+    "manifest": "package.json",
+    "lockfile": "package-lock.json",
+    "lock_committed": false,
+    "direct": {
+     "@ai-sdk/openai-compatible": {
+      "scope": "prod",
+      "range": "^2.0.35"
+     },
+     "@fontsource/roboto": {
+      "scope": "prod",
+      "range": "^5.2.9"
+     },
+     "@simplewebauthn/server": {
+      "scope": "prod",
+      "range": "^14.0.3"
+     },
+     "ai": {
+      "scope": "prod",
+      "range": "^6.0.116"
+     },
+     "beercss": {
+      "scope": "prod",
+      "range": "^4.0.19"
+     },
+     "clarinet": {
+      "scope": "prod",
+      "range": "^0.12.6"
+     },
+     "compression": {
+      "scope": "prod",
+      "range": "^1.8.1"
+     },
+     "config": {
+      "scope": "prod",
+      "range": "^3.3.12"
+     },
+     "cookie-parser": {
+      "scope": "prod",
+      "range": "^1.4.7"
+     },
+     "cookieconsent": {
+      "scope": "prod",
+      "range": "^3.1.1"
+     },
+     "cors": {
+      "scope": "prod",
+      "range": "^2.8.5"
+     },
+     "errorhandler": {
+      "scope": "prod",
+      "range": "^1.5.1"
+     },
+     "ethers": {
+      "scope": "prod",
+      "range": "^6.16.0"
+     },
+     "express": {
+      "scope": "prod",
+      "range": "^4.22.1"
+     },
+     "express-ipfilter": {
+      "scope": "prod",
+      "range": "^1.3.2"
+     },
+     "express-jwt": {
+      "scope": "prod",
+      "range": "0.1.3"
+     },
+     "express-rate-limit": {
+      "scope": "prod",
+      "range": "^7.5.1"
+     },
+     "express-robots-txt": {
+      "scope": "prod",
+      "range": "^0.5.0"
+     },
+     "express-security.txt": {
+      "scope": "prod",
+      "range": "^2.0.0"
+     },
+     "feature-policy": {
+      "scope": "prod",
+      "range": "^0.6.0"
+     },
+     "file-stream-rotator": {
+      "scope": "prod",
+      "range": "^1.0.0"
+     },
+     "file-type": {
+      "scope": "prod",
+      "range": "^16.5.4"
+     },
+     "finale-rest": {
+      "scope": "prod",
+      "range": "^1.2.2"
+     },
+     "hashids": {
+      "scope": "prod",
+      "range": "^2.3.0"
+     },
+     "hbs": {
+      "scope": "prod",
+      "range": "^4.2.0"
+     },
+     "helmet": {
+      "scope": "prod",
+      "range": "^4.6.0"
+     },
+     "html-entities": {
+      "scope": "prod",
+      "range": "^1.4.0"
+     },
+     "i18n": {
+      "scope": "prod",
+      "range": "^0.11.1"
+     },
+     "js-yaml": {
+      "scope": "prod",
+      "range": "^3.14.0"
+     },
+     "jsonwebtoken": {
+      "scope": "prod",
+      "range": "0.4.0"
+     },
+     "libxml2-wasm": {
+      "scope": "prod",
+      "range": "^0.7.1"
+     },
+     "marsdb": {
+      "scope": "prod",
+      "range": "^0.6.11"
+     },
+     "material-icons": {
+      "scope": "prod",
+      "range": "^1.13.14"
+     },
+     "morgan": {
+      "scope": "prod",
+      "range": "^1.10.0"
+     },
+     "multer": {
+      "scope": "prod",
+      "range": "^2.4.0"
+     },
+     "notevil": {
+      "scope": "prod",
+      "range": "^1.3.3"
+     },
+     "otplib": {
+      "scope": "prod",
+      "range": "^13.4.0"
+     },
+     "pdfkit": {
+      "scope": "prod",
+      "range": "^0.11.0"
+     },
+     "prom-client": {
+      "scope": "prod",
+      "range": "^15.1.3"
+     },
+     "proxy-agent": {
+      "scope": "prod",
+      "range": "^8.0.2"
+     },
+     "pug": {
+      "scope": "prod",
+      "range": "^3.0.3"
+     },
+     "sanitize-filename": {
+      "scope": "prod",
+      "range": "^1.6.3"
+     },
+     "sanitize-html": {
+      "scope": "prod",
+      "range": "1.4.2"
+     },
+     "semver": {
+      "scope": "prod",
+      "range": "^7.6.3"
+     },
+     "sequelize": {
+      "scope": "prod",
+      "range": "^6.37.3"
+     },
+     "serve-index": {
+      "scope": "prod",
+      "range": "^1.9.1"
+     },
+     "socket.io": {
+      "scope": "prod",
+      "range": "^4.8.4"
+     },
+     "sqlite3": {
+      "scope": "prod",
+      "range": "^5.1.7"
+     },
+     "svg-captcha": {
+      "scope": "prod",
+      "range": "^1.4.0"
+     },
+     "swagger-ui-express": {
+      "scope": "prod",
+      "range": "^5.0.1"
+     },
+     "unzipper": {
+      "scope": "prod",
+      "range": "^0.12.3"
+     },
+     "winston": {
+      "scope": "prod",
+      "range": "^3.16.0"
+     },
+     "z85": {
+      "scope": "prod",
+      "range": "^0.0.2"
+     },
+     "zod": {
+      "scope": "prod",
+      "range": "^4.4.3"
+     },
+     "@cyclonedx/cyclonedx-npm": {
+      "scope": "dev",
+      "range": "^2.0.0||^3.0.0||^4.00"
+     },
+     "@eslint/js": {
+      "scope": "dev",
+      "range": "^9.33.0"
+     },
+     "@istanbuljs/nyc-config-typescript": {
+      "scope": "dev",
+      "range": "^1.0.2"
+     },
+     "@types/clarinet": {
+      "scope": "dev",
+      "range": "^0.12.3"
+     },
+     "@types/compression": {
+      "scope": "dev",
+      "range": "^1.8.1"
+     },
+     "@types/config": {
+      "scope": "dev",
+      "range": "^3.3.5"
+     },
+     "@types/cookie-parser": {
+      "scope": "dev",
+      "range": "^1.4.10"
+     },
+     "@types/cors": {
+      "scope": "dev",
+      "range": "^2.8.19"
+     },
+     "@types/cross-spawn": {
+      "scope": "dev",
+      "range": "^6.0.6"
+     },
+     "@types/diff": {
+      "scope": "dev",
+      "range": "^7.0.1"
+     },
+     "@types/errorhandler": {
+      "scope": "dev",
+      "range": "^1.5.3"
+     },
+     "@types/exif": {
+      "scope": "dev",
+      "range": "^0.6.5"
+     },
+     "@types/express": {
+      "scope": "dev",
+      "range": "^4.17.25"
+     },
+     "@types/express-jwt": {
+      "scope": "dev",
+      "range": "^6.0.4"
+     },
+     "@types/i18n": {
+      "scope": "dev",
+      "range": "^0.12.0"
+     },
+     "@types/js-yaml": {
+      "scope": "dev",
+      "range": "^3.12.10"
+     },
+     "@types/jsonwebtoken": {
+      "scope": "dev",
+      "range": "^8.5.9"
+     },
+     "@types/jws": {
+      "scope": "dev",
+      "range": "^3.2.10"
+     },
+     "@types/lodash": {
+      "scope": "dev",
+      "range": "^4.17.14"
+     },
+     "@types/morgan": {
+      "scope": "dev",
+      "range": "^1.9.9"
+     },
+     "@types/multer": {
+      "scope": "dev",
+      "range": "^1.4.12"
+     },
+     "@types/node": {
+      "scope": "dev",
+      "range": "^26.0.1"
+     },
+     "@types/pdfkit": {
+      "scope": "dev",
+      "range": "^0.10.6"
+     },
+     "@types/pug": {
+      "scope": "dev",
+      "range": "^2.0.10"
+     },
+     "@types/sanitize-html": {
+      "scope": "dev",
+      "range": "^1.27.2"
+     },
+     "@types/semver": {
+      "scope": "dev",
+      "range": "^7.5.8"
+     },
+     "@types/sequelize": {
+      "scope": "dev",
+      "range": "^4.28.20"
+     },
+     "@types/serve-index": {
+      "scope": "dev",
+      "range": "^1.9.4"
+     },
+     "@types/supertest": {
+      "scope": "dev",
+      "range": "^7.2.0"
+     },
+     "@types/swagger-ui-express": {
+      "scope": "dev",
+      "range": "^4.1.6"
+     },
+     "@types/unzipper": {
+      "scope": "dev",
+      "range": "^0.10.10"
+     },
+     "concurrently": {
+      "scope": "dev",
+      "range": "^5.3.0"
+     },
+     "cypress": {
+      "scope": "dev",
+      "range": "^16.2.0"
+     },
+     "diff": {
+      "scope": "dev",
+      "range": "^9.0.0"
+     },
+     "eslint": {
+      "scope": "dev",
+      "range": "^9.39.4"
+     },
+     "exif": {
+      "scope": "dev",
+      "range": "^0.6.0"
+     },
+     "globals": {
+      "scope": "dev",
+      "range": "^17.4.0"
+     },
+     "neostandard": {
+      "scope": "dev",
+      "range": "^0.13.0"
+     },
+     "nyc": {
+      "scope": "dev",
+      "range": "^15.1.0"
+     },
+     "socket.io-client": {
+      "scope": "dev",
+      "range": "^4.8.4"
+     },
+     "supertest": {
+      "scope": "dev",
+      "range": "^7.2.2"
+     },
+     "tsx": {
+      "scope": "dev",
+      "range": "^4.21.0"
+     },
+     "typescript": {
+      "scope": "dev",
+      "range": "^6.0.3"
+     },
+     "typescript-eslint": {
+      "scope": "dev",
+      "range": "^8.57.1"
+     }
+    }
+   }
+  ],
+  "images": [
+   "node:24",
+   "gcr.io/distroless/nodejs24-debian13",
+   "node:20.19.2-bookworm-slim",
+   "node:20.19.2-bookworm",
+   "alpine"
+  ],
+  "workflows": 16,
+  "actions": 94
+ },
+ "policy": {
+  "deny": [
+   "F-011: critical reachable vulnerability in jsonwebtoken@0.4.0",
+   "F-014: critical reachable vulnerability in marsdb@0.6.11",
+   "F-022: typosquat-suspect dependency 'ngy-cookie' (looks like 'ngx-cookie')"
+  ],
+  "warn": [
+   "F-040: frontend: lockfile is not committed \u2014 transitive versions float on every install (non-reproducible builds)",
+   "F-041: .: lockfile is not committed \u2014 transitive versions float on every install (non-reproducible builds)",
+   "F-042: Dockerfile:1 base image 'node:24' is not pinned to a digest (mutable tag)",
+   "F-043: Dockerfile:21 base image 'gcr.io/distroless/nodejs24-debian13' is not pinned to a digest (mutable tag)",
+   "F-044: Dockerfile:4 installs 'typescript@^6.0.3' with a floating version during image build",
+   "F-045: Dockerfile:19 installs '@cyclonedx/cyclonedx-npm@$CYCLONEDX_NPM_VERSION' with a floating version during image build",
+   "F-046: infrastructure/Dockerfile:1 base image 'node:20.19.2-bookworm-slim' is not pinned to a digest (mutable tag)",
+   "F-047: infrastructure/Dockerfile:5 base image 'node:20.19.2-bookworm' is not pinned to a digest (mutable tag)",
+   "F-048: test/smoke/Dockerfile:1 base image 'alpine' is not pinned to a digest (mutable tag)",
+   "F-050: .github/workflows/ci.yml:198 uses 'coverallsapp/github-action@v2' (tag, not commit SHA)",
+   "F-051: .github/workflows/ci.yml:353 pipes a downloaded script into a shell",
+   "F-052: .github/workflows/codeql-analysis.yml:23 uses 'github/codeql-action/init@v3' (tag, not commit SHA)",
+   "F-053: .github/workflows/codeql-analysis.yml:34 uses 'github/codeql-action/autobuild@v3' (tag, not commit SHA)",
+   "F-054: .github/workflows/codeql-analysis.yml:36 uses 'github/codeql-action/analyze@v3' (tag, not commit SHA)",
+   "F-055: .github/workflows/image_actions.yml:30 uses 'actions/checkout@v6' (tag, not commit SHA)",
+   "F-056: .github/workflows/image_actions.yml:33 uses 'calibreapp/image-actions@main' (tag, not commit SHA)",
+   "F-057: .github/workflows/image_actions.yml:42 uses 'peter-evans/create-pull-request@v8' (tag, not commit SHA)"
+  ],
+  "remediation_allowed": [],
+  "auto_merge_allowed": false,
+  "build_allowed": false,
+  "engine": "python-mirror"
+ },
+ "findings": [
+  {
+   "id": "F-011",
+   "type": "vulnerability",
+   "title": "jsonwebtoken@0.4.0: Verification Bypass in jsonwebtoken",
+   "severity_base": 9.5,
+   "evidence": [
+    "E-0142",
+    "E-0143",
+    "E-0144",
+    "E-0145",
+    "E-0147",
+    "E-0226"
+   ],
+   "component": "jsonwebtoken",
+   "version": "0.4.0",
+   "nodes": [
+    ".::node_modules/jsonwebtoken"
+   ],
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-qwph-4952-7xr6",
+     "title": "jsonwebtoken vulnerable to signature validation bypass due to insecure default algorithm in jwt.verify()",
+     "severity": "moderate",
+     "range": "<9.0.0",
+     "cvss": 6.4,
+     "cwe": [
+      "CWE-287",
+      "CWE-327",
+      "CWE-347"
+     ]
+    },
+    {
+     "id": "GHSA-8cf7-32gw-wr33",
+     "title": "jsonwebtoken unrestricted key type could lead to legacy keys usage ",
+     "severity": "high",
+     "range": "<=8.5.1",
+     "cvss": 8.1,
+     "cwe": [
+      "CWE-327"
+     ]
+    },
+    {
+     "id": "GHSA-hjrf-2m68-5959",
+     "title": "jsonwebtoken's insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC",
+     "severity": "moderate",
+     "range": "<=8.5.1",
+     "cvss": 5,
+     "cwe": [
+      "CWE-287",
+      "CWE-1259"
+     ]
+    },
+    {
+     "id": "GHSA-c7hr-j4mj-j2w6",
+     "title": "Verification Bypass in jsonwebtoken",
+     "severity": "critical",
+     "range": "<4.2.2",
+     "cvss": 0,
+     "cwe": [
+      "CWE-20"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "9.0.0",
+    "min_safe_same_major": null,
+    "latest_safe": "9.0.3",
+    "latest": "9.0.3",
+    "all_known_advisory_ranges": [
+     "<4.2.2",
+     "<9.0.0",
+     "<=8.5.1"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "jsonwebtoken@0.4.0"
+    ]
+   ],
+   "parent_constraints": [
+    "juice-shop wants 0.4.0"
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "lib/insecurity.ts",
+      "line": 11,
+      "code": "import jwt from 'jsonwebtoken'"
+     },
+     {
+      "file": "routes/authenticatedUsers.ts",
+      "line": 7,
+      "code": "import { decode } from 'jsonwebtoken'"
+     },
+     {
+      "file": "routes/verify.ts",
+      "line": 8,
+      "code": "import jwt from 'jsonwebtoken'"
+     },
+     {
+      "file": "routes/passkey.ts",
+      "line": 9,
+      "code": "import jwt from 'jsonwebtoken'"
+     }
+    ],
+    "test": [
+     {
+      "file": "test/api/2fa.test.ts",
+      "line": 10,
+      "code": "import jwt from 'jsonwebtoken'"
+     }
+    ],
+    "symbols_used": [
+     "VerifyErrors",
+     "decode",
+     "pub",
+     "sign",
+     "verify"
+    ]
+   },
+   "risk_score": 9.5,
+   "priority": "Critical",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 9.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   },
+   "assessment": {
+    "finding_id": "F-011",
+    "verdict": "true_positive",
+    "adjusted_priority": "Critical",
+    "confidence": 0.95,
+    "rationale": "offline deterministic assessment (no LLM configured)",
+    "claims": [
+     {
+      "statement": "jsonwebtoken@0.4.0: Verification Bypass in jsonwebtoken",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0142",
+       "E-0143",
+       "E-0144"
+      ]
+     },
+     {
+      "statement": "static import scan classifies jsonwebtoken as reachable_direct",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0226"
+      ]
+     }
+    ],
+    "mode": "offline",
+    "verified_claims": 2,
+    "inferred_claims": 0
+   }
+  },
+  {
+   "id": "F-014",
+   "type": "vulnerability",
+   "title": "marsdb@0.6.11: Command Injection in marsdb",
+   "severity_base": 9.5,
+   "evidence": [
+    "E-0156",
+    "E-0157",
+    "E-0229"
+   ],
+   "component": "marsdb",
+   "version": "0.6.11",
+   "nodes": [
+    ".::node_modules/marsdb"
+   ],
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-5mrr-rgp6-x4gr",
+     "title": "Command Injection in marsdb",
+     "severity": "critical",
+     "range": ">=0.0.0",
+     "cvss": 0,
+     "cwe": [
+      "CWE-77"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": null,
+    "min_safe_same_major": null,
+    "latest_safe": null,
+    "latest": "0.6.11",
+    "all_known_advisory_ranges": [
+     ">=0.0.0"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "marsdb@0.6.11"
+    ]
+   ],
+   "parent_constraints": [
+    "juice-shop wants ^0.6.11"
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "data/mongodb.ts",
+      "line": 7,
+      "code": "import * as MarsDB from 'marsdb'"
+     }
+    ],
+    "test": [],
+    "symbols_used": [
+     "Collection"
+    ]
+   },
+   "risk_score": 9.5,
+   "priority": "Critical",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 9.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-012",
+   "type": "vulnerability",
+   "title": "jws@0.2.6: Forgeable Public/Private Tokens in jws",
+   "severity_base": 8.7,
+   "evidence": [
+    "E-0148",
+    "E-0149",
+    "E-0150",
+    "E-0227"
+   ],
+   "component": "jws",
+   "version": "0.2.6",
+   "nodes": [
+    ".::node_modules/jws"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-869p-cjfg-cm3x",
+     "title": "auth0/node-jws Improperly Verifies HMAC Signature",
+     "severity": "high",
+     "range": "<3.2.3",
+     "cvss": 7.5,
+     "cwe": [
+      "CWE-347"
+     ]
+    },
+    {
+     "id": "GHSA-gjcw-v447-2w7q",
+     "title": "Forgeable Public/Private Tokens in jws",
+     "severity": "high",
+     "range": "<3.0.0",
+     "cvss": 8.7,
+     "cwe": []
+    }
+   ],
+   "fix": {
+    "min_safe": "3.2.3",
+    "min_safe_same_major": null,
+    "latest_safe": "4.0.1",
+    "latest": "4.0.1",
+    "all_known_advisory_ranges": [
+     "<3.0.0",
+     "<3.2.3",
+     "=4.0.0"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "jsonwebtoken@0.4.0",
+     "jws@0.2.6"
+    ]
+   ],
+   "parent_constraints": [
+    "jsonwebtoken wants ~0.2.2"
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "lib/insecurity.ts",
+      "line": 12,
+      "code": "import jws from 'jws'"
+     },
+     {
+      "file": "routes/verify.ts",
+      "line": 10,
+      "code": "import jws from 'jws'"
+     },
+     {
+      "file": "routes/passkey.ts",
+      "line": 10,
+      "code": "import jws from 'jws'"
+     }
+    ],
+    "test": [],
+    "symbols_used": [
+     "decode",
+     "verify"
+    ]
+   },
+   "risk_score": 8.7,
+   "priority": "High",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 8.7,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-022",
+   "type": "typosquat",
+   "title": "'ngy-cookie' looks like popular package 'ngx-cookie' (edit distance 1)",
+   "severity_base": 8.5,
+   "evidence": [
+    "E-0195",
+    "E-0196",
+    "E-0197",
+    "E-0237"
+   ],
+   "component": "ngy-cookie",
+   "version": "6.0.1000",
+   "nodes": [
+    "frontend::node_modules/ngy-cookie"
+   ],
+   "project": "frontend",
+   "direct": true,
+   "dev_only": false,
+   "lookalike_of": "ngx-cookie",
+   "signals": {
+    "candidate": {
+     "name": "ngy-cookie",
+     "exists": true,
+     "description": "Implementation of Angular 1.x $cookies service to Angular",
+     "created": "2024-02-26T12:40:35.481Z",
+     "modified": "2024-02-26T15:55:25.658Z",
+     "latest": "6.0.1000",
+     "version_count": 2,
+     "maintainers": [
+      "bkimminich"
+     ],
+     "repository": "git+https://github.com/salemdar/ngx-cookie.git",
+     "deprecated": null,
+     "install_scripts": {},
+     "version_published": "2024-02-26T15:55:25.229Z",
+     "has_provenance": false
+    },
+    "legit": {
+     "name": "ngx-cookie",
+     "exists": true,
+     "description": "Implementation of Angular 1.x $cookies service to Angular",
+     "created": "2017-03-02T13:00:55.709Z",
+     "modified": "2022-06-30T11:19:27.510Z",
+     "latest": "6.0.1",
+     "version_count": 18,
+     "maintainers": [
+      "sa.alemdar"
+     ],
+     "repository": "git+https://github.com/salemdar/ngx-cookie.git",
+     "deprecated": null,
+     "install_scripts": {},
+     "version_published": null,
+     "has_provenance": false
+    }
+   },
+   "ecosystem": "npm",
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "ngy-cookie@6.0.1000"
+    ]
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "src/main.ts",
+      "line": 57,
+      "code": "import { CookieService, CookieModule } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/oauth/oauth.component.ts",
+      "line": 8,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/administration/administration.component.ts",
+      "line": 20,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/server-started-notification/server-started-notification.component.ts",
+      "line": 9,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/welcome-banner/welcome-banner.component.ts",
+      "line": 9,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/navbar/navbar.component.ts",
+      "line": 12,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/two-factor-auth-enter/two-factor-auth-enter.component.ts",
+      "line": 9,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/sidenav/sidenav.component.ts",
+      "line": 13,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/Services/local-backup.service.ts",
+      "line": 8,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/payment/payment.component.ts",
+      "line": 31,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/challenge-solved-notification/challenge-solved-notification.component.ts",
+      "line": 10,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/login/login.component.ts",
+      "line": 6,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/welcome/welcome.component.ts",
+      "line": 10,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/chatbot/chat-conversation/chat-conversation.component.ts",
+      "line": 16,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/helpers/handle-verdict.ts",
+      "line": 8,
+      "code": "import { type CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/components/coding-challenge-find-it/coding-challenge-find-it.component.ts",
+      "line": 9,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/components/coding-challenge-fix-it/coding-challenge-fix-it.component.ts",
+      "line": 12,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     }
+    ],
+    "test": [
+     {
+      "file": "src/app/app.component.spec.ts",
+      "line": 35,
+      "code": "import { CookieModule } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/oauth/oauth.component.spec.ts",
+      "line": 24,
+      "code": "import { CookieModule } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/coding-challenge-page.component.spec.ts",
+      "line": 14,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/administration/administration.component.spec.ts",
+      "line": 11,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/server-started-notification/server-started-notification.component.spec.ts",
+      "line": 6,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/welcome-banner/welcome-banner.component.spec.ts",
+      "line": 8,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/navbar/navbar.component.spec.ts",
+      "line": 25,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/two-factor-auth-enter/two-factor-auth-enter.component.spec.ts",
+      "line": 18,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/deluxe-user/deluxe-user.component.spec.ts",
+      "line": 18,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/sidenav/sidenav.component.spec.ts",
+      "line": 14,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/Services/local-backup.service.spec.ts",
+      "line": 10,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/payment/payment.component.spec.ts",
+      "line": 29,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/challenge-solved-notification/challenge-solved-notification.component.spec.ts",
+      "line": 9,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/login/login.component.spec.ts",
+      "line": 20,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/welcome/welcome.component.spec.ts",
+      "line": 9,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/chatbot/chat-conversation/chat-conversation.component.spec.ts",
+      "line": 15,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/components/coding-challenge-find-it/coding-challenge-find-it.component.spec.ts",
+      "line": 10,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/components/coding-challenge-fix-it/coding-challenge-fix-it.component.spec.ts",
+      "line": 10,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     }
+    ],
+    "symbols_used": [
+     "CookieModule",
+     "CookieService"
+    ]
+   },
+   "risk_score": 8.5,
+   "priority": "High",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 8.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   },
+   "assessment": {
+    "finding_id": "F-022",
+    "verdict": "true_positive",
+    "adjusted_priority": "High",
+    "confidence": 0.95,
+    "rationale": "offline deterministic assessment (no LLM configured)",
+    "claims": [
+     {
+      "statement": "'ngy-cookie' looks like popular package 'ngx-cookie' (edit distance 1)",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0195",
+       "E-0196",
+       "E-0197"
+      ]
+     },
+     {
+      "statement": "static import scan classifies ngy-cookie as reachable_direct",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0237"
+      ]
+     },
+     {
+      "statement": "name is one edit away from popular package ngx-cookie",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0195",
+       "E-0196",
+       "E-0197",
+       "E-0237"
+      ]
+     }
+    ],
+    "mode": "offline",
+    "verified_claims": 3,
+    "inferred_claims": 0
+   }
+  },
+  {
+   "id": "F-010",
+   "type": "vulnerability",
+   "title": "jsonwebtoken@0.1.0: Verification Bypass in jsonwebtoken",
+   "severity_base": 9.5,
+   "evidence": [
+    "E-0142",
+    "E-0143",
+    "E-0144",
+    "E-0145",
+    "E-0146",
+    "E-0225"
+   ],
+   "component": "jsonwebtoken",
+   "version": "0.1.0",
+   "nodes": [
+    ".::node_modules/express-jwt/node_modules/jsonwebtoken"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-qwph-4952-7xr6",
+     "title": "jsonwebtoken vulnerable to signature validation bypass due to insecure default algorithm in jwt.verify()",
+     "severity": "moderate",
+     "range": "<9.0.0",
+     "cvss": 6.4,
+     "cwe": [
+      "CWE-287",
+      "CWE-327",
+      "CWE-347"
+     ]
+    },
+    {
+     "id": "GHSA-8cf7-32gw-wr33",
+     "title": "jsonwebtoken unrestricted key type could lead to legacy keys usage ",
+     "severity": "high",
+     "range": "<=8.5.1",
+     "cvss": 8.1,
+     "cwe": [
+      "CWE-327"
+     ]
+    },
+    {
+     "id": "GHSA-hjrf-2m68-5959",
+     "title": "jsonwebtoken's insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC",
+     "severity": "moderate",
+     "range": "<=8.5.1",
+     "cvss": 5,
+     "cwe": [
+      "CWE-287",
+      "CWE-1259"
+     ]
+    },
+    {
+     "id": "GHSA-c7hr-j4mj-j2w6",
+     "title": "Verification Bypass in jsonwebtoken",
+     "severity": "critical",
+     "range": "<4.2.2",
+     "cvss": 0,
+     "cwe": [
+      "CWE-20"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "9.0.0",
+    "min_safe_same_major": null,
+    "latest_safe": "9.0.3",
+    "latest": "9.0.3",
+    "all_known_advisory_ranges": [
+     "<4.2.2",
+     "<9.0.0",
+     "<=8.5.1"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "express-jwt@0.1.3",
+     "jsonwebtoken@0.1.0"
+    ]
+   ],
+   "parent_constraints": [
+    "express-jwt wants ~0.1.0"
+   ],
+   "reachability": {
+    "status": "transitive_of_reachable",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "shadowed_by_top_level_import": true,
+    "via": "express-jwt"
+   },
+   "risk_score": 8.07,
+   "priority": "High",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 9.5,
+    "reachability": 0.85,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-004",
+   "type": "vulnerability",
+   "title": "crypto-js@3.3.0: crypto-js PBKDF2 1,000 times weaker than specified in 1993 and 1.3M times weaker than current standard",
+   "severity_base": 9.1,
+   "evidence": [
+    "E-0129",
+    "E-0130",
+    "E-0131",
+    "E-0219"
+   ],
+   "component": "crypto-js",
+   "version": "3.3.0",
+   "nodes": [
+    ".::node_modules/crypto-js"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-rg76-677x-56q9",
+     "title": "crypto-js: Insufficient Entropy in Cryptographic Secret Generation via Vulnerable CryptoJS Dependency Chain",
+     "severity": "critical",
+     "range": "<4.0.0",
+     "cvss": 9,
+     "cwe": [
+      "CWE-331",
+      "CWE-334",
+      "CWE-338"
+     ]
+    },
+    {
+     "id": "GHSA-xwcq-pm8m-c4vf",
+     "title": "crypto-js PBKDF2 1,000 times weaker than specified in 1993 and 1.3M times weaker than current standard",
+     "severity": "critical",
+     "range": "<4.2.0",
+     "cvss": 9.1,
+     "cwe": [
+      "CWE-327",
+      "CWE-328",
+      "CWE-916"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": null,
+    "min_safe_same_major": null,
+    "latest_safe": null,
+    "latest": "4.2.0",
+    "all_known_advisory_ranges": [
+     "<4.0.0",
+     "<4.2.0"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "pdfkit@0.11.0",
+     "crypto-js@3.3.0"
+    ]
+   ],
+   "parent_constraints": [
+    "pdfkit wants ^3.1.9-1"
+   ],
+   "reachability": {
+    "status": "transitive_of_reachable",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "via": "pdfkit"
+   },
+   "risk_score": 7.73,
+   "priority": "High",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 9.1,
+    "reachability": 0.85,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-013",
+   "type": "vulnerability",
+   "title": "lodash@2.4.2: Prototype Pollution in lodash",
+   "severity_base": 9.1,
+   "evidence": [
+    "E-0151",
+    "E-0152",
+    "E-0153",
+    "E-0154",
+    "E-0155",
+    "E-0228"
+   ],
+   "component": "lodash",
+   "version": "2.4.2",
+   "nodes": [
+    ".::node_modules/sanitize-html/node_modules/lodash"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-fvqr-27wr-82fm",
+     "title": "Prototype Pollution in lodash",
+     "severity": "moderate",
+     "range": "<4.17.5",
+     "cvss": 6.5,
+     "cwe": [
+      "CWE-471",
+      "CWE-1321"
+     ]
+    },
+    {
+     "id": "GHSA-35jh-r3h4-6jhm",
+     "title": "Command Injection in lodash",
+     "severity": "high",
+     "range": "<4.17.21",
+     "cvss": 7.2,
+     "cwe": [
+      "CWE-77",
+      "CWE-94"
+     ]
+    },
+    {
+     "id": "GHSA-4xc9-xhrj-v574",
+     "title": "Prototype Pollution in lodash",
+     "severity": "high",
+     "range": "<4.17.11",
+     "cvss": 0,
+     "cwe": [
+      "CWE-400"
+     ]
+    },
+    {
+     "id": "GHSA-jf85-cpcp-j695",
+     "title": "Prototype Pollution in lodash",
+     "severity": "critical",
+     "range": "<4.17.12",
+     "cvss": 9.1,
+     "cwe": [
+      "CWE-20",
+      "CWE-1321"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "4.18.1",
+    "min_safe_same_major": null,
+    "latest_safe": "4.18.1",
+    "latest": "4.18.1",
+    "all_known_advisory_ranges": [
+     "<4.17.11",
+     "<4.17.12",
+     "<4.17.21",
+     "<4.17.5",
+     "=4.17.23",
+     ">=3.7.0 <4.17.19",
+     ">=4.0.0 <4.17.21",
+     ">=4.0.0 <=4.17.22",
+     ">=4.0.0 <=4.17.23",
+     ">=4.7.0 <4.17.11"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "sanitize-html@1.4.2",
+     "lodash@2.4.2"
+    ]
+   ],
+   "parent_constraints": [
+    "sanitize-html wants 2.4.x"
+   ],
+   "reachability": {
+    "status": "transitive_of_reachable",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "shadowed_by_top_level_import": false,
+    "via": "sanitize-html"
+   },
+   "risk_score": 7.73,
+   "priority": "High",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 9.1,
+    "reachability": 0.85,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-006",
+   "type": "vulnerability",
+   "title": "express-jwt@0.1.3: Authorization bypass in express-jwt",
+   "severity_base": 7.7,
+   "evidence": [
+    "E-0134",
+    "E-0135",
+    "E-0221"
+   ],
+   "component": "express-jwt",
+   "version": "0.1.3",
+   "nodes": [
+    ".::node_modules/express-jwt"
+   ],
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-6g6m-m6h5-w9gf",
+     "title": "Authorization bypass in express-jwt",
+     "severity": "high",
+     "range": "<=5.3.3",
+     "cvss": 7.7,
+     "cwe": [
+      "CWE-285",
+      "CWE-863"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "6.0.0",
+    "min_safe_same_major": null,
+    "latest_safe": "8.5.1",
+    "latest": "8.5.1",
+    "all_known_advisory_ranges": [
+     "<=5.3.3"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "express-jwt@0.1.3"
+    ]
+   ],
+   "parent_constraints": [
+    "juice-shop wants 0.1.3"
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "lib/insecurity.ts",
+      "line": 10,
+      "code": "import expressJwt from 'express-jwt'"
+     }
+    ],
+    "test": [],
+    "symbols_used": [
+     "<callable>"
+    ]
+   },
+   "risk_score": 7.7,
+   "priority": "High",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 7.7,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-018",
+   "type": "vulnerability",
+   "title": "sanitize-html@1.4.2: Sanitize-html Vulnerable To REDoS Attacks",
+   "severity_base": 7.5,
+   "evidence": [
+    "E-0166",
+    "E-0167",
+    "E-0168",
+    "E-0169",
+    "E-0170",
+    "E-0171",
+    "E-0172",
+    "E-0173",
+    "E-0174",
+    "E-0175",
+    "E-0176",
+    "E-0233"
+   ],
+   "component": "sanitize-html",
+   "version": "1.4.2",
+   "nodes": [
+    ".::node_modules/sanitize-html"
+   ],
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-qhxp-v273-g94h",
+     "title": "sanitize-html is vulnerable to XSS through incomprehensive sanitization",
+     "severity": "moderate",
+     "range": "<2.0.0-beta",
+     "cvss": 6.1,
+     "cwe": [
+      "CWE-79"
+     ]
+    },
+    {
+     "id": "GHSA-rm97-x556-q36h",
+     "title": "sanitize-html Information Exposure vulnerability",
+     "severity": "moderate",
+     "range": "<2.12.1",
+     "cvss": 5.3,
+     "cwe": [
+      "CWE-200",
+      "CWE-538"
+     ]
+    },
+    {
+     "id": "GHSA-xc6g-ggrc-qq4r",
+     "title": "Cross-Site Scripting in sanitize-html",
+     "severity": "moderate",
+     "range": "<=1.11.1",
+     "cvss": 0,
+     "cwe": [
+      "CWE-79"
+     ]
+    },
+    {
+     "id": "GHSA-mjxr-4v3x-q3m4",
+     "title": "Improper Input Validation in sanitize-html",
+     "severity": "moderate",
+     "range": "<2.3.2",
+     "cvss": 5.3,
+     "cwe": [
+      "CWE-20"
+     ]
+    },
+    {
+     "id": "GHSA-cgfm-xwp7-2cvr",
+     "title": "Sanitize-html Vulnerable To REDoS Attacks",
+     "severity": "high",
+     "range": "<2.7.1",
+     "cvss": 7.5,
+     "cwe": [
+      "CWE-1333"
+     ]
+    },
+    {
+     "id": "GHSA-3j7m-hmh3-9jmp",
+     "title": "Cross-Site Scripting in sanitize-html",
+     "severity": "moderate",
+     "range": "<1.4.3",
+     "cvss": 6.1,
+     "cwe": [
+      "CWE-79"
+     ]
+    },
+    {
+     "id": "GHSA-rjqq-98f6-6j3r",
+     "title": "Improper Input Validation in sanitize-html",
+     "severity": "moderate",
+     "range": "<2.3.1",
+     "cvss": 5.3,
+     "cwe": [
+      "CWE-20"
+     ]
+    },
+    {
+     "id": "GHSA-jxwj-j7wr-gfrw",
+     "title": "ApostropheCMS: Mutation-XSS / allowedTags bypass via literal `</textarea/>` solidus close",
+     "severity": "moderate",
+     "range": "<=2.17.5",
+     "cvss": 6.1,
+     "cwe": [
+      "CWE-79"
+     ]
+    },
+    {
+     "id": "GHSA-x3q4-9hxx-gx8m",
+     "title": "ApostropheCMS sanitize-html: nonTextTags discard region ends early on an implied close, letting <noscript> content render",
+     "severity": "moderate",
+     "range": "<2.18.0",
+     "cvss": 0,
+     "cwe": [
+      "CWE-79"
+     ]
+    },
+    {
+     "id": "GHSA-cv27-6wvh-8x7j",
+     "title": "ApostropheCMS: Incomplete CVE-2026-53606: `meta http-equiv=refresh` `content` still ships `javascript:` / `data:` URLs",
+     "severity": "moderate",
+     "range": "<2.18.0",
+     "cvss": 5.4,
+     "cwe": [
+      "CWE-79"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "2.18.1",
+    "min_safe_same_major": null,
+    "latest_safe": "2.18.2",
+    "latest": "2.18.2",
+    "all_known_advisory_ranges": [
+     "<1.2.3",
+     "<1.4.3",
+     "<2.0.0-beta",
+     "<2.12.1",
+     "<2.18.0",
+     "<2.3.1",
+     "<2.3.2",
+     "<2.7.1",
+     "<=1.11.1",
+     "<=2.17.5",
+     "=2.17.3",
+     ">=1.18.0 <=2.17.4",
+     ">=1.9.0 <=2.17.6",
+     ">=2.17.2 <2.17.3",
+     ">=2.17.7 <2.18.0",
+     ">=2.18.0 <2.18.1"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "sanitize-html@1.4.2"
+    ]
+   ],
+   "parent_constraints": [
+    "juice-shop wants 1.4.2"
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "lib/insecurity.ts",
+      "line": 13,
+      "code": "import sanitizeHtmlLib from 'sanitize-html'"
+     },
+     {
+      "file": "lib/challengeUtils.ts",
+      "line": 5,
+      "code": "import sanitizeHtml from 'sanitize-html'"
+     }
+    ],
+    "test": [],
+    "symbols_used": [
+     "<callable>"
+    ]
+   },
+   "risk_score": 7.5,
+   "priority": "High",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 7.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-017",
+   "type": "vulnerability",
+   "title": "notevil@1.3.3: Sandbox escape in notevil and argencoders-notevil",
+   "severity_base": 6.5,
+   "evidence": [
+    "E-0164",
+    "E-0165",
+    "E-0232"
+   ],
+   "component": "notevil",
+   "version": "1.3.3",
+   "nodes": [
+    ".::node_modules/notevil"
+   ],
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-8g4m-cjm2-96wq",
+     "title": "Sandbox escape in notevil and argencoders-notevil",
+     "severity": "moderate",
+     "range": "<=1.3.3",
+     "cvss": 6.5,
+     "cwe": [
+      "CWE-1321"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": null,
+    "min_safe_same_major": null,
+    "latest_safe": null,
+    "latest": "1.3.3",
+    "all_known_advisory_ranges": [
+     "<=1.3.3"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "notevil@1.3.3"
+    ]
+   ],
+   "parent_constraints": [
+    "juice-shop wants ^1.3.3"
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "routes/b2bOrder.ts",
+      "line": 9,
+      "code": "import { eval as safeEval } from 'notevil'"
+     }
+    ],
+    "test": [],
+    "symbols_used": [
+     "eval"
+    ]
+   },
+   "risk_score": 6.5,
+   "priority": "Medium",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 6.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-051",
+   "type": "ci_curl_pipe",
+   "title": ".github/workflows/ci.yml:353 pipes a downloaded script into a shell",
+   "severity_base": 6.5,
+   "evidence": [
+    "E-0050"
+   ],
+   "component": ".github/workflows/ci.yml",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": ".github/workflows/ci.yml",
+   "line": 353,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 6.5,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 6.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   },
+   "assessment": {
+    "finding_id": "F-051",
+    "verdict": "true_positive",
+    "adjusted_priority": "Medium",
+    "confidence": 0.65,
+    "rationale": "offline deterministic assessment (no LLM configured)",
+    "claims": [
+     {
+      "statement": ".github/workflows/ci.yml:353 pipes a downloaded script into a shell",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0050"
+      ]
+     }
+    ],
+    "mode": "offline",
+    "verified_claims": 1,
+    "inferred_claims": 0
+   }
+  },
+  {
+   "id": "F-016",
+   "type": "vulnerability",
+   "title": "moment@2.0.0: Path Traversal: 'dir/../../filename' in moment.locale",
+   "severity_base": 7.5,
+   "evidence": [
+    "E-0160",
+    "E-0161",
+    "E-0162",
+    "E-0163",
+    "E-0231"
+   ],
+   "component": "moment",
+   "version": "2.0.0",
+   "nodes": [
+    ".::node_modules/express-jwt/node_modules/moment"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-8hfj-j24r-96c4",
+     "title": "Path Traversal: 'dir/../../filename' in moment.locale",
+     "severity": "high",
+     "range": "<2.29.2",
+     "cvss": 7.5,
+     "cwe": [
+      "CWE-22",
+      "CWE-27"
+     ]
+    },
+    {
+     "id": "GHSA-87vv-r9j6-g5qv",
+     "title": "Regular Expression Denial of Service in moment",
+     "severity": "moderate",
+     "range": "<2.11.2",
+     "cvss": 6.5,
+     "cwe": [
+      "CWE-400"
+     ]
+    },
+    {
+     "id": "GHSA-446m-mv8f-q348",
+     "title": "Regular Expression Denial of Service in moment",
+     "severity": "high",
+     "range": "<2.19.3",
+     "cvss": 7.5,
+     "cwe": [
+      "CWE-400"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "2.31.0",
+    "min_safe_same_major": "2.31.0",
+    "latest_safe": "2.31.0",
+    "latest": "2.31.0",
+    "all_known_advisory_ranges": [
+     "<2.11.2",
+     "<2.19.3",
+     "<2.29.2",
+     ">=2.18.0 <2.29.4",
+     ">=2.29.2 <2.31.0"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "express-jwt@0.1.3",
+     "jsonwebtoken@0.1.0",
+     "moment@2.0.0"
+    ]
+   ],
+   "parent_constraints": [
+    "jsonwebtoken wants ~2.0.0"
+   ],
+   "reachability": {
+    "status": "transitive_of_reachable",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "shadowed_by_top_level_import": false,
+    "via": "express-jwt"
+   },
+   "risk_score": 6.38,
+   "priority": "Medium",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 7.5,
+    "reachability": 0.85,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-020",
+   "type": "vulnerability",
+   "title": "uuid@8.3.2: uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+   "severity_base": 7.5,
+   "evidence": [
+    "E-0190",
+    "E-0191",
+    "E-0235"
+   ],
+   "component": "uuid",
+   "version": "8.3.2",
+   "nodes": [
+    ".::node_modules/uuid"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-w5hq-g745-h8pq",
+     "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+     "severity": "moderate",
+     "range": "<11.1.1",
+     "cvss": 7.5,
+     "cwe": [
+      "CWE-787",
+      "CWE-1285"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "11.1.1",
+    "min_safe_same_major": null,
+    "latest_safe": "14.0.3",
+    "latest": "14.0.3",
+    "all_known_advisory_ranges": [
+     "<11.1.1",
+     ">=12.0.0 <12.0.1",
+     ">=13.0.0 <13.0.1"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "sequelize@6.37.8",
+     "uuid@8.3.2"
+    ]
+   ],
+   "parent_constraints": [
+    "istanbul-lib-processinfo wants ^8.3.2",
+    "sequelize wants ^8.3.2"
+   ],
+   "reachability": {
+    "status": "transitive_of_reachable",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "via": "sequelize"
+   },
+   "risk_score": 6.38,
+   "priority": "Medium",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 7.5,
+    "reachability": 0.85,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-041",
+   "type": "lockfile_uncommitted",
+   "title": ".: lockfile is not committed \u2014 transitive versions float on every install (non-reproducible builds)",
+   "severity_base": 6.0,
+   "evidence": [
+    "E-0214"
+   ],
+   "component": "package-lock.json",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 6.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 6.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   },
+   "assessment": {
+    "finding_id": "F-041",
+    "verdict": "true_positive",
+    "adjusted_priority": "Medium",
+    "confidence": 0.65,
+    "rationale": "offline deterministic assessment (no LLM configured)",
+    "claims": [
+     {
+      "statement": ".: lockfile is not committed \u2014 transitive versions float on every install (non-reproducible builds)",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0214"
+      ]
+     }
+    ],
+    "mode": "offline",
+    "verified_claims": 1,
+    "inferred_claims": 0
+   }
+  },
+  {
+   "id": "F-058",
+   "type": "ci_risky_trigger",
+   "title": ".github/workflows/pr-compliance.yml: uses pull_request_target (runs with secrets on fork PRs)",
+   "severity_base": 6.0,
+   "evidence": [
+    "E-0087"
+   ],
+   "component": ".github/workflows/pr-compliance.yml",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": ".github/workflows/pr-compliance.yml",
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 6.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 6.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   },
+   "assessment": {
+    "finding_id": "F-058",
+    "verdict": "needs_human_review",
+    "adjusted_priority": "Medium",
+    "confidence": 0.65,
+    "rationale": "offline deterministic assessment (no LLM configured)",
+    "claims": [
+     {
+      "statement": ".github/workflows/pr-compliance.yml: uses pull_request_target (runs with secrets on fork PRs)",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0087"
+      ]
+     },
+     {
+      "statement": "pull_request_target is only dangerous if the job checks out and runs PR code",
+      "kind": "inference",
+      "evidence_ids": []
+     }
+    ],
+    "mode": "offline",
+    "verified_claims": 1,
+    "inferred_claims": 1
+   }
+  },
+  {
+   "id": "F-042",
+   "type": "unpinned_image",
+   "title": "Dockerfile:1 base image 'node:24' is not pinned to a digest (mutable tag)",
+   "severity_base": 5.5,
+   "evidence": [
+    "E-0005"
+   ],
+   "component": "node:24",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": "Dockerfile",
+   "line": 1,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.5,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   },
+   "assessment": {
+    "finding_id": "F-042",
+    "verdict": "true_positive",
+    "adjusted_priority": "Medium",
+    "confidence": 0.65,
+    "rationale": "offline deterministic assessment (no LLM configured)",
+    "claims": [
+     {
+      "statement": "Dockerfile:1 base image 'node:24' is not pinned to a digest (mutable tag)",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0005"
+      ]
+     }
+    ],
+    "mode": "offline",
+    "verified_claims": 1,
+    "inferred_claims": 0
+   }
+  },
+  {
+   "id": "F-043",
+   "type": "unpinned_image",
+   "title": "Dockerfile:21 base image 'gcr.io/distroless/nodejs24-debian13' is not pinned to a digest (mutable tag)",
+   "severity_base": 5.5,
+   "evidence": [
+    "E-0006"
+   ],
+   "component": "gcr.io/distroless/nodejs24-debian13",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": "Dockerfile",
+   "line": 21,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.5,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-046",
+   "type": "unpinned_image",
+   "title": "infrastructure/Dockerfile:1 base image 'node:20.19.2-bookworm-slim' is not pinned to a digest (mutable tag)",
+   "severity_base": 5.5,
+   "evidence": [
+    "E-0009"
+   ],
+   "component": "node:20.19.2-bookworm-slim",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": "infrastructure/Dockerfile",
+   "line": 1,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.5,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-047",
+   "type": "unpinned_image",
+   "title": "infrastructure/Dockerfile:5 base image 'node:20.19.2-bookworm' is not pinned to a digest (mutable tag)",
+   "severity_base": 5.5,
+   "evidence": [
+    "E-0010"
+   ],
+   "component": "node:20.19.2-bookworm",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": "infrastructure/Dockerfile",
+   "line": 5,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.5,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-048",
+   "type": "unpinned_image",
+   "title": "test/smoke/Dockerfile:1 base image 'alpine' is not pinned to a digest (mutable tag)",
+   "severity_base": 5.5,
+   "evidence": [
+    "E-0011"
+   ],
+   "component": "alpine",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": "test/smoke/Dockerfile",
+   "line": 1,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.5,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.5,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-007",
+   "type": "vulnerability",
+   "title": "file-type@16.5.4: file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header",
+   "severity_base": 5.3,
+   "evidence": [
+    "E-0136",
+    "E-0137",
+    "E-0222"
+   ],
+   "component": "file-type",
+   "version": "16.5.4",
+   "nodes": [
+    ".::node_modules/file-type"
+   ],
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-5v7r-6r5c-r473",
+     "title": "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header",
+     "severity": "moderate",
+     "range": ">=13.0.0 <21.3.1",
+     "cvss": 5.3,
+     "cwe": [
+      "CWE-835"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "21.3.2",
+    "min_safe_same_major": null,
+    "latest_safe": "22.3.0",
+    "latest": "22.3.0",
+    "all_known_advisory_ranges": [
+     ">=13.0.0 <16.5.4",
+     ">=13.0.0 <21.3.1",
+     ">=17.0.0 <17.1.3",
+     ">=20.0.0 <=21.3.1"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "file-type@16.5.4"
+    ]
+   ],
+   "parent_constraints": [
+    "juice-shop wants ^16.5.4"
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "routes/profileImageFileUpload.ts",
+      "line": 8,
+      "code": "import fileType from 'file-type'"
+     }
+    ],
+    "test": [],
+    "symbols_used": [
+     "fromBuffer"
+    ]
+   },
+   "risk_score": 5.3,
+   "priority": "Medium",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 5.3,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-023",
+   "type": "suspicious_version",
+   "title": "ngy-cookie@6.0.1000: anomalous version number",
+   "severity_base": 6.5,
+   "evidence": [
+    "E-0002",
+    "E-0198",
+    "E-0237"
+   ],
+   "component": "ngy-cookie",
+   "version": "6.0.1000",
+   "nodes": [
+    "frontend::node_modules/ngy-cookie"
+   ],
+   "project": "frontend",
+   "direct": true,
+   "dev_only": false,
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "src/main.ts",
+      "line": 57,
+      "code": "import { CookieService, CookieModule } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/oauth/oauth.component.ts",
+      "line": 8,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/administration/administration.component.ts",
+      "line": 20,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/server-started-notification/server-started-notification.component.ts",
+      "line": 9,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/welcome-banner/welcome-banner.component.ts",
+      "line": 9,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/navbar/navbar.component.ts",
+      "line": 12,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/two-factor-auth-enter/two-factor-auth-enter.component.ts",
+      "line": 9,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/sidenav/sidenav.component.ts",
+      "line": 13,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/Services/local-backup.service.ts",
+      "line": 8,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/payment/payment.component.ts",
+      "line": 31,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/challenge-solved-notification/challenge-solved-notification.component.ts",
+      "line": 10,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/login/login.component.ts",
+      "line": 6,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/welcome/welcome.component.ts",
+      "line": 10,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/chatbot/chat-conversation/chat-conversation.component.ts",
+      "line": 16,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/helpers/handle-verdict.ts",
+      "line": 8,
+      "code": "import { type CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/components/coding-challenge-find-it/coding-challenge-find-it.component.ts",
+      "line": 9,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/components/coding-challenge-fix-it/coding-challenge-fix-it.component.ts",
+      "line": 12,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     }
+    ],
+    "test": [
+     {
+      "file": "src/app/app.component.spec.ts",
+      "line": 35,
+      "code": "import { CookieModule } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/oauth/oauth.component.spec.ts",
+      "line": 24,
+      "code": "import { CookieModule } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/coding-challenge-page.component.spec.ts",
+      "line": 14,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/administration/administration.component.spec.ts",
+      "line": 11,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/server-started-notification/server-started-notification.component.spec.ts",
+      "line": 6,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/welcome-banner/welcome-banner.component.spec.ts",
+      "line": 8,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/navbar/navbar.component.spec.ts",
+      "line": 25,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/two-factor-auth-enter/two-factor-auth-enter.component.spec.ts",
+      "line": 18,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/deluxe-user/deluxe-user.component.spec.ts",
+      "line": 18,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/sidenav/sidenav.component.spec.ts",
+      "line": 14,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/Services/local-backup.service.spec.ts",
+      "line": 10,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/payment/payment.component.spec.ts",
+      "line": 29,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/challenge-solved-notification/challenge-solved-notification.component.spec.ts",
+      "line": 9,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/login/login.component.spec.ts",
+      "line": 20,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/welcome/welcome.component.spec.ts",
+      "line": 9,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/chatbot/chat-conversation/chat-conversation.component.spec.ts",
+      "line": 15,
+      "code": "import { CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/components/coding-challenge-find-it/coding-challenge-find-it.component.spec.ts",
+      "line": 10,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     },
+     {
+      "file": "src/app/coding-challenge-page/components/coding-challenge-fix-it/coding-challenge-fix-it.component.spec.ts",
+      "line": 10,
+      "code": "import { CookieModule, CookieService } from 'ngy-cookie'"
+     }
+    ],
+    "symbols_used": [
+     "CookieModule",
+     "CookieService"
+    ]
+   },
+   "risk_score": 5.2,
+   "priority": "Medium",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 6.5,
+    "reachability": 1.0,
+    "exposure": 0.8,
+    "environment": 1.0
+   },
+   "assessment": {
+    "finding_id": "F-023",
+    "verdict": "true_positive",
+    "adjusted_priority": "Medium",
+    "confidence": 0.95,
+    "rationale": "offline deterministic assessment (no LLM configured)",
+    "claims": [
+     {
+      "statement": "ngy-cookie@6.0.1000: anomalous version number",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0002",
+       "E-0198",
+       "E-0237"
+      ]
+     },
+     {
+      "statement": "static import scan classifies ngy-cookie as reachable_direct",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0237"
+      ]
+     }
+    ],
+    "mode": "offline",
+    "verified_claims": 2,
+    "inferred_claims": 0
+   }
+  },
+  {
+   "id": "F-021",
+   "type": "vulnerability",
+   "title": "ws@8.18.0: ws: Memory exhaustion DoS from tiny fragments and data chunks",
+   "severity_base": 7.5,
+   "evidence": [
+    "E-0192",
+    "E-0193",
+    "E-0194",
+    "E-0236"
+   ],
+   "component": "ws",
+   "version": "8.18.0",
+   "nodes": [
+    "frontend::node_modules/ws"
+   ],
+   "project": "frontend",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-58qx-3vcg-4xpx",
+     "title": "ws: Uninitialized memory disclosure",
+     "severity": "moderate",
+     "range": ">=8.0.0 <8.20.1",
+     "cvss": 4.4,
+     "cwe": [
+      "CWE-908"
+     ]
+    },
+    {
+     "id": "GHSA-96hv-2xvq-fx4p",
+     "title": "ws: Memory exhaustion DoS from tiny fragments and data chunks",
+     "severity": "high",
+     "range": ">=8.0.0 <8.21.0",
+     "cvss": 7.5,
+     "cwe": [
+      "CWE-400",
+      "CWE-770",
+      "CWE-1050"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "8.21.0",
+    "min_safe_same_major": "8.21.0",
+    "latest_safe": "8.23.0",
+    "latest": "8.23.0",
+    "all_known_advisory_ranges": [
+     "<1.0.1",
+     "<1.1.1",
+     ">=0.6.0 <1.1.5",
+     ">=1.1.0 <5.2.5",
+     ">=2.0.0 <3.3.1",
+     ">=2.1.0 <5.2.4",
+     ">=5.0.0 <5.2.3",
+     ">=6.0.0 <6.2.2",
+     ">=6.0.0 <6.2.3",
+     ">=6.0.0 <6.2.4",
+     ">=7.0.0 <7.4.6",
+     ">=7.0.0 <7.5.10",
+     ">=7.0.0 <7.5.11",
+     ">=8.0.0 <8.17.1",
+     ">=8.0.0 <8.20.1",
+     ">=8.0.0 <8.21.0"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "ethers@5.8.0",
+     "@ethersproject/providers@5.8.0",
+     "ws@8.18.0"
+    ]
+   ],
+   "parent_constraints": [
+    "@ethersproject/providers wants 8.18.0"
+   ],
+   "reachability": {
+    "status": "transitive_of_reachable",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "via": "ethers"
+   },
+   "risk_score": 5.1,
+   "priority": "Medium",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 7.5,
+    "reachability": 0.85,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-044",
+   "type": "unpinned_build_tool",
+   "title": "Dockerfile:4 installs 'typescript@^6.0.3' with a floating version during image build",
+   "severity_base": 5.0,
+   "evidence": [
+    "E-0007"
+   ],
+   "component": "typescript@^6.0.3",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": "Dockerfile",
+   "line": 4,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   },
+   "assessment": {
+    "finding_id": "F-044",
+    "verdict": "true_positive",
+    "adjusted_priority": "Medium",
+    "confidence": 0.65,
+    "rationale": "offline deterministic assessment (no LLM configured)",
+    "claims": [
+     {
+      "statement": "Dockerfile:4 installs 'typescript@^6.0.3' with a floating version during image build",
+      "kind": "verified_fact",
+      "evidence_ids": [
+       "E-0007"
+      ]
+     }
+    ],
+    "mode": "offline",
+    "verified_claims": 1,
+    "inferred_claims": 0
+   }
+  },
+  {
+   "id": "F-045",
+   "type": "unpinned_build_tool",
+   "title": "Dockerfile:19 installs '@cyclonedx/cyclonedx-npm@$CYCLONEDX_NPM_VERSION' with a floating version during image build",
+   "severity_base": 5.0,
+   "evidence": [
+    "E-0008"
+   ],
+   "component": "@cyclonedx/cyclonedx-npm@$CYCLONEDX_NPM_VERSION",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": "Dockerfile",
+   "line": 19,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-050",
+   "type": "unpinned_action",
+   "title": ".github/workflows/ci.yml:198 uses 'coverallsapp/github-action@v2' (tag, not commit SHA)",
+   "severity_base": 5.0,
+   "evidence": [
+    "E-0032"
+   ],
+   "component": "coverallsapp/github-action@v2",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": ".github/workflows/ci.yml",
+   "line": 198,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-052",
+   "type": "unpinned_action",
+   "title": ".github/workflows/codeql-analysis.yml:23 uses 'github/codeql-action/init@v3' (tag, not commit SHA)",
+   "severity_base": 5.0,
+   "evidence": [
+    "E-0052"
+   ],
+   "component": "github/codeql-action/init@v3",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": ".github/workflows/codeql-analysis.yml",
+   "line": 23,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-053",
+   "type": "unpinned_action",
+   "title": ".github/workflows/codeql-analysis.yml:34 uses 'github/codeql-action/autobuild@v3' (tag, not commit SHA)",
+   "severity_base": 5.0,
+   "evidence": [
+    "E-0053"
+   ],
+   "component": "github/codeql-action/autobuild@v3",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": ".github/workflows/codeql-analysis.yml",
+   "line": 34,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-054",
+   "type": "unpinned_action",
+   "title": ".github/workflows/codeql-analysis.yml:36 uses 'github/codeql-action/analyze@v3' (tag, not commit SHA)",
+   "severity_base": 5.0,
+   "evidence": [
+    "E-0054"
+   ],
+   "component": "github/codeql-action/analyze@v3",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": ".github/workflows/codeql-analysis.yml",
+   "line": 36,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-055",
+   "type": "unpinned_action",
+   "title": ".github/workflows/image_actions.yml:30 uses 'actions/checkout@v6' (tag, not commit SHA)",
+   "severity_base": 5.0,
+   "evidence": [
+    "E-0059"
+   ],
+   "component": "actions/checkout@v6",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": ".github/workflows/image_actions.yml",
+   "line": 30,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-056",
+   "type": "unpinned_action",
+   "title": ".github/workflows/image_actions.yml:33 uses 'calibreapp/image-actions@main' (tag, not commit SHA)",
+   "severity_base": 5.0,
+   "evidence": [
+    "E-0060"
+   ],
+   "component": "calibreapp/image-actions@main",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": ".github/workflows/image_actions.yml",
+   "line": 33,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-057",
+   "type": "unpinned_action",
+   "title": ".github/workflows/image_actions.yml:42 uses 'peter-evans/create-pull-request@v8' (tag, not commit SHA)",
+   "severity_base": 5.0,
+   "evidence": [
+    "E-0061"
+   ],
+   "component": "peter-evans/create-pull-request@v8",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "file": ".github/workflows/image_actions.yml",
+   "line": 42,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 5.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 5.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-019",
+   "type": "vulnerability",
+   "title": "tar@6.2.1: Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS",
+   "severity_base": 8.8,
+   "evidence": [
+    "E-0177",
+    "E-0178",
+    "E-0179",
+    "E-0180",
+    "E-0181",
+    "E-0182",
+    "E-0183",
+    "E-0184",
+    "E-0185",
+    "E-0186",
+    "E-0187",
+    "E-0188",
+    "E-0189",
+    "E-0234"
+   ],
+   "component": "tar",
+   "version": "6.2.1",
+   "nodes": [
+    ".::node_modules/sqlite3/node_modules/tar"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-34x7-hfp2-rc4v",
+     "title": "node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal",
+     "severity": "high",
+     "range": "<7.5.7",
+     "cvss": 8.2,
+     "cwe": [
+      "CWE-22",
+      "CWE-59"
+     ]
+    },
+    {
+     "id": "GHSA-8qq5-rm4j-mr97",
+     "title": "node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization",
+     "severity": "high",
+     "range": "<=7.5.2",
+     "cvss": 0,
+     "cwe": [
+      "CWE-22"
+     ]
+    },
+    {
+     "id": "GHSA-83g3-92jg-28cx",
+     "title": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction",
+     "severity": "high",
+     "range": "<7.5.8",
+     "cvss": 7.1,
+     "cwe": [
+      "CWE-22"
+     ]
+    },
+    {
+     "id": "GHSA-qffp-2rhf-9h96",
+     "title": "tar has Hardlink Path Traversal via Drive-Relative Linkpath",
+     "severity": "high",
+     "range": "<=7.5.9",
+     "cvss": 0,
+     "cwe": [
+      "CWE-22",
+      "CWE-59"
+     ]
+    },
+    {
+     "id": "GHSA-9ppj-qmqm-q256",
+     "title": "node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+     "severity": "high",
+     "range": "<=7.5.10",
+     "cvss": 0,
+     "cwe": [
+      "CWE-22"
+     ]
+    },
+    {
+     "id": "GHSA-vmf3-w455-68vh",
+     "title": "node-tar applies PAX size override to intermediary GNU long-name/long-link headers, causing tar parser interpretation differential (file smuggling)",
+     "severity": "moderate",
+     "range": "<=7.5.15",
+     "cvss": 0,
+     "cwe": [
+      "CWE-436"
+     ]
+    },
+    {
+     "id": "GHSA-r6q2-hw4h-h46w",
+     "title": "Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS",
+     "severity": "high",
+     "range": "<=7.5.3",
+     "cvss": 8.8,
+     "cwe": [
+      "CWE-176",
+      "CWE-367"
+     ]
+    },
+    {
+     "id": "GHSA-w8wr-v893-vjvp",
+     "title": "node-tar: Process crash via PAX numeric path type confusion",
+     "severity": "moderate",
+     "range": "<=7.5.17",
+     "cvss": 5.3,
+     "cwe": [
+      "CWE-704"
+     ]
+    },
+    {
+     "id": "GHSA-23hp-3jrh-7fpw",
+     "title": "node-tar: Decompression/parse DoS via unlimited input",
+     "severity": "critical",
+     "range": "<=7.5.18",
+     "cvss": 7.5,
+     "cwe": [
+      "CWE-770"
+     ]
+    },
+    {
+     "id": "GHSA-8x88-c5mf-7j5w",
+     "title": "node-tar: Negative tar entry size causes infinite loop in archive replace",
+     "severity": "high",
+     "range": "<=7.5.17",
+     "cvss": 7.5,
+     "cwe": [
+      "CWE-835"
+     ]
+    },
+    {
+     "id": "GHSA-gvwx-54wh-qm9j",
+     "title": "node-tar: Uncaught Exception DoS via NUL byte in PAX path/linkpath records",
+     "severity": "moderate",
+     "range": "<=7.5.16",
+     "cvss": 5.3,
+     "cwe": [
+      "CWE-248"
+     ]
+    },
+    {
+     "id": "GHSA-r292-9mhp-454m",
+     "title": "node-tar: Uncontrolled recursion in mapHas/filesFilter allows uncatchable stack-overflow DoS via crafted long-path tar with member selection",
+     "severity": "high",
+     "range": "<=7.5.20",
+     "cvss": 7.5,
+     "cwe": [
+      "CWE-400",
+      "CWE-674"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "7.5.21",
+    "min_safe_same_major": null,
+    "latest_safe": "7.5.23",
+    "latest": "7.5.23",
+    "all_known_advisory_ranges": [
+     "<7.5.7",
+     "<7.5.8",
+     "<=7.5.10",
+     "<=7.5.15",
+     "<=7.5.16",
+     "<=7.5.17",
+     "<=7.5.18",
+     "<=7.5.2",
+     "<=7.5.20",
+     "<=7.5.3",
+     "<=7.5.9"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "sqlite3@5.1.7",
+     "tar@6.2.1"
+    ]
+   ],
+   "parent_constraints": [
+    "cacache wants ^6.0.2",
+    "node-gyp wants ^6.1.2",
+    "sqlite3 wants ^6.1.11"
+   ],
+   "reachability": {
+    "status": "unreferenced",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "shadowed_by_top_level_import": false
+   },
+   "risk_score": 4.84,
+   "priority": "Medium",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 8.8,
+    "reachability": 0.55,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-040",
+   "type": "lockfile_uncommitted",
+   "title": "frontend: lockfile is not committed \u2014 transitive versions float on every install (non-reproducible builds)",
+   "severity_base": 6.0,
+   "evidence": [
+    "E-0213"
+   ],
+   "component": "frontend/package-lock.json",
+   "project": "frontend",
+   "direct": true,
+   "dev_only": false,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 4.8,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 6.0,
+    "reachability": 1.0,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-003",
+   "type": "vulnerability",
+   "title": "base64url@0.0.6: Out-of-bounds Read in base64url",
+   "severity_base": 5.5,
+   "evidence": [
+    "E-0127",
+    "E-0128",
+    "E-0218"
+   ],
+   "component": "base64url",
+   "version": "0.0.6",
+   "nodes": [
+    ".::node_modules/base64url"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-rvg8-pwq2-xj7q",
+     "title": "Out-of-bounds Read in base64url",
+     "severity": "moderate",
+     "range": "<3.0.0",
+     "cvss": 0,
+     "cwe": [
+      "CWE-125"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "3.0.0",
+    "min_safe_same_major": null,
+    "latest_safe": "3.0.1",
+    "latest": "3.0.1",
+    "all_known_advisory_ranges": [
+     "<3.0.0"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "jsonwebtoken@0.4.0",
+     "jws@0.2.6",
+     "base64url@0.0.6"
+    ]
+   ],
+   "parent_constraints": [
+    "jwa wants ~0.0.3",
+    "jws wants 0.0.6"
+   ],
+   "reachability": {
+    "status": "transitive_of_reachable",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "via": "express-jwt"
+   },
+   "risk_score": 4.67,
+   "priority": "Medium",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 5.5,
+    "reachability": 0.85,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-049",
+   "type": "container_root",
+   "title": "test/smoke/Dockerfile: container runs as root",
+   "severity_base": 4.0,
+   "evidence": [
+    "E-0215"
+   ],
+   "component": "test/smoke/Dockerfile",
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "reachability": {
+    "status": "n/a"
+   },
+   "risk_score": 4.0,
+   "priority": "Medium",
+   "confidence": 0.65,
+   "score_factors": {
+    "base": 4.0,
+    "reachability": 1.0,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-034",
+   "type": "install_script",
+   "title": "@scarf/scarf@1.4.0 runs an install script",
+   "severity_base": 4.5,
+   "evidence": [
+    "E-0004",
+    "E-0209",
+    "E-0248"
+   ],
+   "component": "@scarf/scarf",
+   "version": "1.4.0",
+   "nodes": [
+    ".::node_modules/@scarf/scarf"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": false,
+   "scripts": {
+    "postinstall": "node ./report.js"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "swagger-ui-express@5.0.1",
+     "swagger-ui-dist@5.36.0",
+     "@scarf/scarf@1.4.0"
+    ]
+   ],
+   "reachability": {
+    "status": "transitive_of_reachable",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "via": "swagger-ui-express"
+   },
+   "risk_score": 3.82,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 4.5,
+    "reachability": 0.85,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-005",
+   "type": "vulnerability",
+   "title": "elliptic@6.6.1: Elliptic Uses a Cryptographic Primitive with a Risky Implementation",
+   "severity_base": 5.6,
+   "evidence": [
+    "E-0132",
+    "E-0133",
+    "E-0220"
+   ],
+   "component": "elliptic",
+   "version": "6.6.1",
+   "nodes": [
+    "frontend::node_modules/elliptic"
+   ],
+   "project": "frontend",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-848j-6mx2-7j84",
+     "title": "Elliptic Uses a Cryptographic Primitive with a Risky Implementation",
+     "severity": "low",
+     "range": "<=6.6.1",
+     "cvss": 5.6,
+     "cwe": [
+      "CWE-1240"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": null,
+    "min_safe_same_major": null,
+    "latest_safe": null,
+    "latest": "6.6.1",
+    "all_known_advisory_ranges": [
+     "<6.5.3",
+     "<6.5.4",
+     "<6.5.6",
+     "<6.6.0",
+     "<=6.6.0",
+     "<=6.6.1",
+     ">=2.0.0 <=6.5.6",
+     ">=4.0.0 <=6.5.6",
+     ">=5.2.1 <=6.5.6"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "ethers@5.8.0",
+     "@ethersproject/signing-key@5.8.0",
+     "elliptic@6.6.1"
+    ]
+   ],
+   "parent_constraints": [
+    "@ethersproject/signing-key wants 6.6.1"
+   ],
+   "reachability": {
+    "status": "transitive_of_reachable",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "via": "ethers"
+   },
+   "risk_score": 3.81,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 5.6,
+    "reachability": 0.85,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-025",
+   "type": "install_script",
+   "title": "@fortawesome/fontawesome-svg-core@1.2.36 runs an install script",
+   "severity_base": 4.5,
+   "evidence": [
+    "E-0002",
+    "E-0200",
+    "E-0239"
+   ],
+   "component": "@fortawesome/fontawesome-svg-core",
+   "version": "1.2.36",
+   "nodes": [
+    "frontend::node_modules/@fortawesome/fontawesome-svg-core"
+   ],
+   "project": "frontend",
+   "direct": true,
+   "dev_only": false,
+   "scripts": {
+    "postinstall": "node attribution.js"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "@fortawesome/fontawesome-svg-core@1.2.36"
+    ]
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "src/app/app.component.ts",
+      "line": 7,
+      "code": "import { dom } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/token-sale/token-sale.component.ts",
+      "line": 8,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/forgot-password/forgot-password.component.ts",
+      "line": 11,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/change-password/change-password.component.ts",
+      "line": 10,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/administration/administration.component.ts",
+      "line": 14,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/order-completion/order-completion.component.ts",
+      "line": 13,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/challenge-status-badge/challenge-status-badge.component.ts",
+      "line": 9,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/payment-method/payment-method.component.ts",
+      "line": 10,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/two-factor-auth/two-factor-auth.component.ts",
+      "line": 12,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/navbar/navbar.component.ts",
+      "line": 46,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/two-factor-auth-enter/two-factor-auth-enter.component.ts",
+      "line": 12,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/search-result/search-result.component.ts",
+      "line": 17,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/user-details/user-details.component.ts",
+      "line": 9,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/register/register.component.ts",
+      "line": 12,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/track-result/track-result.component.ts",
+      "line": 11,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/payment/payment.component.ts",
+      "line": 11,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/recycle/recycle.component.ts",
+      "line": 11,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/purchase-basket/purchase-basket.component.ts",
+      "line": 12,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/accounting/accounting.component.ts",
+      "line": 12,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/basket/basket.component.ts",
+      "line": 7,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/contact/contact.component.ts",
+      "line": 11,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/login/login.component.ts",
+      "line": 12,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/qr-code/qr-code.component.ts",
+      "line": 8,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/photo-wall/photo-wall.component.ts",
+      "line": 11,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/address/address.component.ts",
+      "line": 11,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/about/about.component.ts",
+      "line": 11,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/complaint/complaint.component.ts",
+      "line": 12,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/product-details/product-details.component.ts",
+      "line": 12,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/error-page/error-page.component.ts",
+      "line": 9,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/delivery-method/delivery-method.component.ts",
+      "line": 13,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     },
+     {
+      "file": "src/app/score-board/components/challenges-unavailable-warning/challenges-unavailable-warning.component.ts",
+      "line": 9,
+      "code": "import { library } from '@fortawesome/fontawesome-svg-core'"
+     }
+    ],
+    "test": [],
+    "symbols_used": [
+     "dom",
+     "library"
+    ]
+   },
+   "risk_score": 3.6,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 4.5,
+    "reachability": 1.0,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-026",
+   "type": "install_script",
+   "title": "@fortawesome/free-brands-svg-icons@5.15.4 runs an install script",
+   "severity_base": 4.5,
+   "evidence": [
+    "E-0002",
+    "E-0201",
+    "E-0240"
+   ],
+   "component": "@fortawesome/free-brands-svg-icons",
+   "version": "5.15.4",
+   "nodes": [
+    "frontend::node_modules/@fortawesome/free-brands-svg-icons"
+   ],
+   "project": "frontend",
+   "direct": true,
+   "dev_only": false,
+   "scripts": {
+    "postinstall": "node attribution.js"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "@fortawesome/free-brands-svg-icons@5.15.4"
+    ]
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "src/app/token-sale/token-sale.component.ts",
+      "line": 9,
+      "code": "import { faBitcoin } from '@fortawesome/free-brands-svg-icons'"
+     },
+     {
+      "file": "src/app/order-completion/order-completion.component.ts",
+      "line": 14,
+      "code": "import { faTwitter } from '@fortawesome/free-brands-svg-icons'"
+     },
+     {
+      "file": "src/app/challenge-status-badge/challenge-status-badge.component.ts",
+      "line": 10,
+      "code": "import { faWindows } from '@fortawesome/free-brands-svg-icons'"
+     },
+     {
+      "file": "src/app/navbar/navbar.component.ts",
+      "line": 45,
+      "code": "import { faGithub } from '@fortawesome/free-brands-svg-icons'"
+     },
+     {
+      "file": "src/app/payment/payment.component.ts",
+      "line": 24,
+      "code": "import { faLeanpub, faStripe } from '@fortawesome/free-brands-svg-icons'"
+     },
+     {
+      "file": "src/app/login/login.component.ts",
+      "line": 15,
+      "code": "import { faGoogle } from '@fortawesome/free-brands-svg-icons'"
+     },
+     {
+      "file": "src/app/photo-wall/photo-wall.component.ts",
+      "line": 12,
+      "code": "import { faTwitter, faMastodon } from '@fortawesome/free-brands-svg-icons'"
+     },
+     {
+      "file": "src/app/about/about.component.ts",
+      "line": 12,
+      "code": "import { faFacebook, faMastodon, faReddit, faSlack, faTwitter } from '@fortawesome/free-brands-svg-icons'"
+     },
+     {
+      "file": "src/app/score-board/components/challenges-unavailable-warning/challenges-unavailable-warning.component.ts",
+      "line": 10,
+      "code": "import { faWindows } from '@fortawesome/free-brands-svg-icons'"
+     }
+    ],
+    "test": [],
+    "symbols_used": [
+     "faBitcoin",
+     "faFacebook",
+     "faGithub",
+     "faGoogle",
+     "faLeanpub",
+     "faMastodon",
+     "faReddit",
+     "faSlack",
+     "faStripe",
+     "faTwitter",
+     "faWindows"
+    ]
+   },
+   "risk_score": 3.6,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 4.5,
+    "reachability": 1.0,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-027",
+   "type": "install_script",
+   "title": "@fortawesome/free-regular-svg-icons@5.15.4 runs an install script",
+   "severity_base": 4.5,
+   "evidence": [
+    "E-0002",
+    "E-0202",
+    "E-0241"
+   ],
+   "component": "@fortawesome/free-regular-svg-icons",
+   "version": "5.15.4",
+   "nodes": [
+    "frontend::node_modules/@fortawesome/free-regular-svg-icons"
+   ],
+   "project": "frontend",
+   "direct": true,
+   "dev_only": false,
+   "scripts": {
+    "postinstall": "node attribution.js"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "@fortawesome/free-regular-svg-icons@5.15.4"
+    ]
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "src/app/token-sale/token-sale.component.ts",
+      "line": 11,
+      "code": "import { faCommentAlt as farCommentAlt, faComments as farComments } from '@fortawesome/free-regular-svg-icons'"
+     },
+     {
+      "file": "src/app/forgot-password/forgot-password.component.ts",
+      "line": 13,
+      "code": "import { faEdit } from '@fortawesome/free-regular-svg-icons'"
+     },
+     {
+      "file": "src/app/change-password/change-password.component.ts",
+      "line": 12,
+      "code": "import { faEdit } from '@fortawesome/free-regular-svg-icons'"
+     },
+     {
+      "file": "src/app/payment-method/payment-method.component.ts",
+      "line": 12,
+      "code": "import { faTrashAlt } from '@fortawesome/free-regular-svg-icons/'"
+     },
+     {
+      "file": "src/app/navbar/navbar.component.ts",
+      "line": 44,
+      "code": "import { faComments } from '@fortawesome/free-regular-svg-icons'"
+     },
+     {
+      "file": "src/app/purchase-basket/purchase-basket.component.ts",
+      "line": 13,
+      "code": "import { faTrashAlt } from '@fortawesome/free-regular-svg-icons/'"
+     },
+     {
+      "file": "src/app/address/address.component.ts",
+      "line": 12,
+      "code": "import { faEdit, faTrashAlt } from '@fortawesome/free-regular-svg-icons/'"
+     },
+     {
+      "file": "src/app/about/about.component.ts",
+      "line": 13,
+      "code": "import { faNewspaper, faStar } from '@fortawesome/free-regular-svg-icons'"
+     }
+    ],
+    "test": [],
+    "symbols_used": [
+     "faCommentAlt",
+     "faComments",
+     "faEdit",
+     "faNewspaper",
+     "faStar",
+     "faTrashAlt"
+    ]
+   },
+   "risk_score": 3.6,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 4.5,
+    "reachability": 1.0,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-028",
+   "type": "install_script",
+   "title": "@fortawesome/free-solid-svg-icons@5.15.4 runs an install script",
+   "severity_base": 4.5,
+   "evidence": [
+    "E-0002",
+    "E-0203",
+    "E-0242"
+   ],
+   "component": "@fortawesome/free-solid-svg-icons",
+   "version": "5.15.4",
+   "nodes": [
+    "frontend::node_modules/@fortawesome/free-solid-svg-icons"
+   ],
+   "project": "frontend",
+   "direct": true,
+   "dev_only": false,
+   "scripts": {
+    "postinstall": "node attribution.js"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "@fortawesome/free-solid-svg-icons@5.15.4"
+    ]
+   ],
+   "reachability": {
+    "status": "reachable_direct",
+    "prod": [
+     {
+      "file": "src/app/token-sale/token-sale.component.ts",
+      "line": 10,
+      "code": "import { faCommentAlt, faComments, faGraduationCap, faUniversity } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/forgot-password/forgot-password.component.ts",
+      "line": 12,
+      "code": "import { faSave } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/change-password/change-password.component.ts",
+      "line": 11,
+      "code": "import { faSave } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/administration/administration.component.ts",
+      "line": 15,
+      "code": "import { faArchive, faEye, faHome, faTrashAlt, faUser } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/payment-method/payment-method.component.ts",
+      "line": 11,
+      "code": "import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/two-factor-auth/two-factor-auth.component.ts",
+      "line": 13,
+      "code": "import { faSave, faUnlockAlt } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/navbar/navbar.component.ts",
+      "line": 43,
+      "code": "} from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/two-factor-auth-enter/two-factor-auth-enter.component.ts",
+      "line": 13,
+      "code": "import { faUnlockAlt } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/search-result/search-result.component.ts",
+      "line": 18,
+      "code": "import { faCartPlus, faEye } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/user-details/user-details.component.ts",
+      "line": 10,
+      "code": "import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/register/register.component.ts",
+      "line": 15,
+      "code": "import { faExclamationCircle, faUserPlus } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/track-result/track-result.component.ts",
+      "line": 12,
+      "code": "import { faHome, faSync, faTruck, faTruckLoading, faWarehouse } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/payment/payment.component.ts",
+      "line": 23,
+      "code": "} from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/recycle/recycle.component.ts",
+      "line": 12,
+      "code": "import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/purchase-basket/purchase-basket.component.ts",
+      "line": 14,
+      "code": "import { faMinusSquare, faPlusSquare } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/accounting/accounting.component.ts",
+      "line": 13,
+      "code": "import { faCheck } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/basket/basket.component.ts",
+      "line": 8,
+      "code": "import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/contact/contact.component.ts",
+      "line": 12,
+      "code": "import { faPaperPlane, faStar } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/login/login.component.ts",
+      "line": 14,
+      "code": "import { faEye, faEyeSlash, faKey } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/qr-code/qr-code.component.ts",
+      "line": 9,
+      "code": "import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/photo-wall/photo-wall.component.ts",
+      "line": 13,
+      "code": "import { faBold } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/about/about.component.ts",
+      "line": 14,
+      "code": "import { faStar as fasStar, faPalette, faBold } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/complaint/complaint.component.ts",
+      "line": 13,
+      "code": "import { faBomb } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/product-details/product-details.component.ts",
+      "line": 13,
+      "code": "import { faCrown } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/error-page/error-page.component.ts",
+      "line": 10,
+      "code": "import { faUserSlash, faHandPaper } from '@fortawesome/free-solid-svg-icons'"
+     },
+     {
+      "file": "src/app/delivery-method/delivery-method.component.ts",
+      "line": 14,
+      "code": "import { faRocket, faShippingFast, faTruck } from '@fortawesome/free-solid-svg-icons'"
+     }
+    ],
+    "test": [],
+    "symbols_used": [
+     "faArchive",
+     "faArrowCircleLeft",
+     "faBold",
+     "faBomb",
+     "faCartArrowDown",
+     "faCartPlus",
+     "faCheck",
+     "faCommentAlt",
+     "faComments",
+     "faCrown",
+     "faExclamationCircle",
+     "faEye",
+     "faEyeSlash",
+     "faGraduationCap",
+     "faHandPaper",
+     "faHome",
+     "faKey",
+     "faMinusSquare",
+     "faPalette",
+     "faPaperPlane",
+     "faPlusSquare",
+     "faRocket",
+     "faSave",
+     "faShippingFast",
+     "faStar",
+     "faSync",
+     "faTrashAlt",
+     "faTruck",
+     "faTruckLoading",
+     "faUniversity",
+     "faUnlockAlt",
+     "faUser",
+     "faUserPlus",
+     "faUserSlash",
+     "faWarehouse"
+    ]
+   },
+   "risk_score": 3.6,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 4.5,
+    "reachability": 1.0,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-024",
+   "type": "install_script",
+   "title": "@fortawesome/fontawesome-common-types@0.2.36 runs an install script",
+   "severity_base": 4.5,
+   "evidence": [
+    "E-0002",
+    "E-0199",
+    "E-0238"
+   ],
+   "component": "@fortawesome/fontawesome-common-types",
+   "version": "0.2.36",
+   "nodes": [
+    "frontend::node_modules/@fortawesome/fontawesome-common-types"
+   ],
+   "project": "frontend",
+   "direct": false,
+   "dev_only": false,
+   "scripts": {
+    "postinstall": "node attribution.js"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "@fortawesome/fontawesome-svg-core@1.2.36",
+     "@fortawesome/fontawesome-common-types@0.2.36"
+    ]
+   ],
+   "reachability": {
+    "status": "transitive_of_reachable",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "via": "@fortawesome/free-brands-svg-icons"
+   },
+   "risk_score": 3.06,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 4.5,
+    "reachability": 0.85,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-009",
+   "type": "vulnerability",
+   "title": "hbs@4.4.0: hbs: Insertion of Sensitive Information into Externally-Accessible File or Directory and Exposure of Sensitive Information to an Unauthorized Actor",
+   "severity_base": 4.0,
+   "evidence": [
+    "E-0140",
+    "E-0141",
+    "E-0224"
+   ],
+   "component": "hbs",
+   "version": "4.4.0",
+   "nodes": [
+    ".::node_modules/hbs"
+   ],
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-7f5c-rpf4-86p8",
+     "title": "hbs: Insertion of Sensitive Information into Externally-Accessible File or Directory and Exposure of Sensitive Information to an Unauthorized Actor",
+     "severity": "moderate",
+     "range": "<=4.4.0",
+     "cvss": 4,
+     "cwe": [
+      "CWE-94",
+      "CWE-200",
+      "CWE-538"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": null,
+    "min_safe_same_major": null,
+    "latest_safe": null,
+    "latest": "4.4.0",
+    "all_known_advisory_ranges": [
+     "<=4.4.0"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "hbs@4.4.0"
+    ]
+   ],
+   "parent_constraints": [
+    "juice-shop wants ^4.2.0"
+   ],
+   "reachability": {
+    "status": "unreferenced",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 2.2,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 4.0,
+    "reachability": 0.55,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-032",
+   "type": "install_script",
+   "title": "lmdb@3.5.9 runs an install script",
+   "severity_base": 4.5,
+   "evidence": [
+    "E-0002",
+    "E-0207",
+    "E-0246"
+   ],
+   "component": "lmdb",
+   "version": "3.5.9",
+   "nodes": [
+    "frontend::node_modules/lmdb"
+   ],
+   "project": "frontend",
+   "direct": false,
+   "dev_only": false,
+   "scripts": {
+    "install": "node-gyp-build-optional-packages",
+    "prepare": "rollup -c"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "@angular/build@22.3.0",
+     "lmdb@3.5.9"
+    ]
+   ],
+   "reachability": {
+    "status": "unreferenced",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 1.98,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 4.5,
+    "reachability": 0.55,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-002",
+   "type": "vulnerability",
+   "title": "@tootallnate/once@1.1.2: @tootallnate/once vulnerable to Incorrect Control Flow Scoping",
+   "severity_base": 3.3,
+   "evidence": [
+    "E-0125",
+    "E-0126",
+    "E-0217"
+   ],
+   "component": "@tootallnate/once",
+   "version": "1.1.2",
+   "nodes": [
+    ".::node_modules/@tootallnate/once"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": false,
+   "advisories": [
+    {
+     "id": "GHSA-vpq2-c234-7xj6",
+     "title": "@tootallnate/once vulnerable to Incorrect Control Flow Scoping",
+     "severity": "low",
+     "range": "<2.0.1",
+     "cvss": 3.3,
+     "cwe": [
+      "CWE-705"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "2.0.1",
+    "min_safe_same_major": null,
+    "latest_safe": "3.0.1",
+    "latest": "3.0.1",
+    "all_known_advisory_ranges": [
+     "<2.0.1",
+     ">=3.0.0 <3.0.1"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "sqlite3@5.1.7",
+     "node-gyp@8.4.1",
+     "make-fetch-happen@9.1.0",
+     "http-proxy-agent@4.0.1",
+     "@tootallnate/once@1.1.2"
+    ]
+   ],
+   "parent_constraints": [
+    "http-proxy-agent wants 1"
+   ],
+   "reachability": {
+    "status": "unreferenced",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 1.81,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 3.3,
+    "reachability": 0.55,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-039",
+   "type": "install_script",
+   "title": "sqlite3@5.1.7 runs an install script",
+   "severity_base": 2.5,
+   "evidence": [
+    "E-0004",
+    "E-0212",
+    "E-0253"
+   ],
+   "component": "sqlite3",
+   "version": "5.1.7",
+   "nodes": [
+    ".::node_modules/sqlite3"
+   ],
+   "project": ".",
+   "direct": true,
+   "dev_only": false,
+   "scripts": {
+    "install": "prebuild-install -r napi || node-gyp rebuild"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "sqlite3@5.1.7"
+    ]
+   ],
+   "reachability": {
+    "status": "unreferenced",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 1.38,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 2.5,
+    "reachability": 0.55,
+    "exposure": 1.0,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-029",
+   "type": "install_script",
+   "title": "@parcel/watcher@2.6.0 runs an install script",
+   "severity_base": 2.5,
+   "evidence": [
+    "E-0002",
+    "E-0204",
+    "E-0243"
+   ],
+   "component": "@parcel/watcher",
+   "version": "2.6.0",
+   "nodes": [
+    "frontend::node_modules/@parcel/watcher"
+   ],
+   "project": "frontend",
+   "direct": false,
+   "dev_only": false,
+   "scripts": {
+    "install": "node scripts/build-from-source.js"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "@angular/build@22.3.0",
+     "@parcel/watcher@2.6.0"
+    ]
+   ],
+   "reachability": {
+    "status": "unreferenced",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 1.1,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 2.5,
+    "reachability": 0.55,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-030",
+   "type": "install_script",
+   "title": "esbuild@0.28.2 runs an install script",
+   "severity_base": 2.5,
+   "evidence": [
+    "E-0002",
+    "E-0205",
+    "E-0244"
+   ],
+   "component": "esbuild",
+   "version": "0.28.2",
+   "nodes": [
+    "frontend::node_modules/esbuild"
+   ],
+   "project": "frontend",
+   "direct": false,
+   "dev_only": false,
+   "scripts": {
+    "postinstall": "node install.js"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "@angular/build@22.3.0",
+     "esbuild@0.28.2"
+    ]
+   ],
+   "reachability": {
+    "status": "unreferenced",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 1.1,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 2.5,
+    "reachability": 0.55,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-031",
+   "type": "install_script",
+   "title": "fsevents@2.3.3 runs an install script",
+   "severity_base": 2.5,
+   "evidence": [
+    "E-0002",
+    "E-0206",
+    "E-0245"
+   ],
+   "component": "fsevents",
+   "version": "2.3.3",
+   "nodes": [
+    "frontend::node_modules/fsevents"
+   ],
+   "project": "frontend",
+   "direct": false,
+   "dev_only": false,
+   "scripts": {
+    "install": "node-gyp rebuild"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "@angular/build@22.3.0",
+     "vite@8.3.8",
+     "fsevents@2.3.3"
+    ]
+   ],
+   "reachability": {
+    "status": "unreferenced",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 1.1,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 2.5,
+    "reachability": 0.55,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-033",
+   "type": "install_script",
+   "title": "msgpackr-extract@3.0.7 runs an install script",
+   "severity_base": 2.5,
+   "evidence": [
+    "E-0002",
+    "E-0208",
+    "E-0247"
+   ],
+   "component": "msgpackr-extract",
+   "version": "3.0.7",
+   "nodes": [
+    "frontend::node_modules/msgpackr-extract"
+   ],
+   "project": "frontend",
+   "direct": false,
+   "dev_only": false,
+   "scripts": {
+    "install": "node-gyp-build-optional-packages"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "frontend@20.4.0-SNAPSHOT",
+     "@angular/build@22.3.0",
+     "lmdb@3.5.9",
+     "msgpackr@1.12.1",
+     "msgpackr-extract@3.0.7"
+    ]
+   ],
+   "reachability": {
+    "status": "unreferenced",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 1.1,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 2.5,
+    "reachability": 0.55,
+    "exposure": 0.8,
+    "environment": 1.0
+   }
+  },
+  {
+   "id": "F-001",
+   "type": "vulnerability",
+   "title": "@cyclonedx/cyclonedx-npm@4.2.1: @cyclonedx/cyclonedx-npm: Shell Injection via Unsanitized --workspace Argument",
+   "severity_base": 7.5,
+   "evidence": [
+    "E-0122",
+    "E-0123",
+    "E-0124",
+    "E-0216"
+   ],
+   "component": "@cyclonedx/cyclonedx-npm",
+   "version": "4.2.1",
+   "nodes": [
+    ".::node_modules/@cyclonedx/cyclonedx-npm"
+   ],
+   "project": ".",
+   "direct": true,
+   "dev_only": true,
+   "advisories": [
+    {
+     "id": "GHSA-v75r-vx73-82pj",
+     "title": "@cyclonedx/cyclonedx-npm: Shell Injection via Unsanitized --workspace Argument",
+     "severity": "high",
+     "range": ">=2.1.0 <5.0.0",
+     "cvss": 0,
+     "cwe": [
+      "CWE-78"
+     ]
+    },
+    {
+     "id": "GHSA-q69g-4hcv-6jg4",
+     "title": "@cyclonedx/cyclonedx-npm: Shell Injection via Unsanitized --workspace Argument on Windows",
+     "severity": "high",
+     "range": "<6.0.0",
+     "cvss": 0,
+     "cwe": [
+      "CWE-78"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "6.0.0",
+    "min_safe_same_major": null,
+    "latest_safe": "7.0.1",
+    "latest": "7.0.1",
+    "all_known_advisory_ranges": [
+     "<6.0.0",
+     ">=2.1.0 <5.0.0"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "@cyclonedx/cyclonedx-npm@4.2.1"
+    ]
+   ],
+   "parent_constraints": [
+    "juice-shop wants ^2.0.0||^3.0.0||^4.00"
+   ],
+   "reachability": {
+    "status": "dev_or_test_only",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 0.9,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 7.5,
+    "reachability": 0.3,
+    "exposure": 1.0,
+    "environment": 0.4
+   }
+  },
+  {
+   "id": "F-008",
+   "type": "vulnerability",
+   "title": "glob@10.5.0: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
+   "severity_base": 5.5,
+   "evidence": [
+    "E-0138",
+    "E-0139",
+    "E-0223"
+   ],
+   "component": "glob",
+   "version": "10.5.0",
+   "nodes": [
+    ".::node_modules/glob"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": true,
+   "advisories": [
+    {
+     "id": "GHSA-3g3m-2fjr-6pw4",
+     "title": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
+     "severity": "moderate",
+     "range": ">=9.0.0 <=14.0.1",
+     "cvss": 0,
+     "cwe": [
+      "CWE-400"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "14.0.2",
+    "min_safe_same_major": null,
+    "latest_safe": "14.0.6",
+    "latest": "14.0.6",
+    "all_known_advisory_ranges": [
+     ">=9.0.0 <=14.0.1"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "@cyclonedx/cyclonedx-npm@4.2.1",
+     "libxmljs2@0.37.0",
+     "node-gyp@11.5.0",
+     "make-fetch-happen@14.0.3",
+     "cacache@19.0.1",
+     "glob@10.5.0"
+    ]
+   ],
+   "parent_constraints": [
+    "cacache wants ^10.2.2"
+   ],
+   "reachability": {
+    "status": "dev_or_test_only",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 0.66,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 5.5,
+    "reachability": 0.3,
+    "exposure": 1.0,
+    "environment": 0.4
+   }
+  },
+  {
+   "id": "F-015",
+   "type": "vulnerability",
+   "title": "minimatch@9.0.9: minimatch has potential denial of service via globparts amplification",
+   "severity_base": 5.5,
+   "evidence": [
+    "E-0158",
+    "E-0159",
+    "E-0230"
+   ],
+   "component": "minimatch",
+   "version": "9.0.9",
+   "nodes": [
+    ".::node_modules/glob/node_modules/minimatch"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": true,
+   "advisories": [
+    {
+     "id": "GHSA-g3hv-75wg-m249",
+     "title": "minimatch has potential denial of service via globparts amplification",
+     "severity": "moderate",
+     "range": ">=7.0.0 <11.0.1",
+     "cvss": 0,
+     "cwe": [
+      "CWE-405"
+     ]
+    }
+   ],
+   "fix": {
+    "min_safe": "11.0.1",
+    "min_safe_same_major": null,
+    "latest_safe": "11.0.9",
+    "latest": "11.0.9",
+    "all_known_advisory_ranges": [
+     "<3.0.5",
+     "<3.1.3",
+     "<3.1.4",
+     ">=10.0.0 <10.2.1",
+     ">=10.0.0 <10.2.3",
+     ">=4.0.0 <4.2.4",
+     ">=4.0.0 <4.2.5",
+     ">=5.0.0 <5.1.7",
+     ">=5.0.0 <5.1.8",
+     ">=6.0.0 <6.2.1",
+     ">=6.0.0 <6.2.2",
+     ">=7.0.0 <11.0.1",
+     ">=7.0.0 <7.4.7",
+     ">=7.0.0 <7.4.8",
+     ">=8.0.0 <8.0.5",
+     ">=8.0.0 <8.0.6",
+     ">=9.0.0 <9.0.6",
+     ">=9.0.0 <9.0.7"
+    ]
+   },
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "@cyclonedx/cyclonedx-npm@4.2.1",
+     "libxmljs2@0.37.0",
+     "node-gyp@11.5.0",
+     "make-fetch-happen@14.0.3",
+     "cacache@19.0.1",
+     "glob@10.5.0",
+     "minimatch@9.0.9"
+    ]
+   ],
+   "parent_constraints": [
+    "glob wants ^9.0.4"
+   ],
+   "reachability": {
+    "status": "dev_or_test_only",
+    "prod": [],
+    "test": [],
+    "symbols_used": [],
+    "shadowed_by_top_level_import": false
+   },
+   "risk_score": 0.66,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 5.5,
+    "reachability": 0.3,
+    "exposure": 1.0,
+    "environment": 0.4
+   }
+  },
+  {
+   "id": "F-035",
+   "type": "install_script",
+   "title": "cypress@16.3.0 runs an install script",
+   "severity_base": 2.5,
+   "evidence": [
+    "E-0004",
+    "E-0210",
+    "E-0249"
+   ],
+   "component": "cypress",
+   "version": "16.3.0",
+   "nodes": [
+    ".::node_modules/cypress"
+   ],
+   "project": ".",
+   "direct": true,
+   "dev_only": true,
+   "scripts": {
+    "postinstall": "node dist/index.js --exec install"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "cypress@16.3.0"
+    ]
+   ],
+   "reachability": {
+    "status": "dev_or_test_only",
+    "prod": [],
+    "test": [
+     {
+      "file": "cypress.config.ts",
+      "line": 1,
+      "code": "import { defineConfig } from 'cypress'"
+     }
+    ],
+    "symbols_used": [
+     "defineConfig"
+    ]
+   },
+   "risk_score": 0.3,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 2.5,
+    "reachability": 0.3,
+    "exposure": 1.0,
+    "environment": 0.4
+   }
+  },
+  {
+   "id": "F-036",
+   "type": "install_script",
+   "title": "esbuild@0.28.2 runs an install script",
+   "severity_base": 2.5,
+   "evidence": [
+    "E-0004",
+    "E-0205",
+    "E-0250"
+   ],
+   "component": "esbuild",
+   "version": "0.28.2",
+   "nodes": [
+    ".::node_modules/esbuild"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": true,
+   "scripts": {
+    "postinstall": "node install.js"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "tsx@4.23.15",
+     "esbuild@0.28.2"
+    ]
+   ],
+   "reachability": {
+    "status": "dev_or_test_only",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 0.3,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 2.5,
+    "reachability": 0.3,
+    "exposure": 1.0,
+    "environment": 0.4
+   }
+  },
+  {
+   "id": "F-037",
+   "type": "install_script",
+   "title": "fsevents@2.3.3 runs an install script",
+   "severity_base": 2.5,
+   "evidence": [
+    "E-0004",
+    "E-0206",
+    "E-0251"
+   ],
+   "component": "fsevents",
+   "version": "2.3.3",
+   "nodes": [
+    ".::node_modules/fsevents"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": true,
+   "scripts": {
+    "install": "node-gyp rebuild"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "tsx@4.23.15",
+     "fsevents@2.3.3"
+    ]
+   ],
+   "reachability": {
+    "status": "dev_or_test_only",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 0.3,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 2.5,
+    "reachability": 0.3,
+    "exposure": 1.0,
+    "environment": 0.4
+   }
+  },
+  {
+   "id": "F-038",
+   "type": "install_script",
+   "title": "libxmljs2@0.37.0 runs an install script",
+   "severity_base": 2.5,
+   "evidence": [
+    "E-0004",
+    "E-0211",
+    "E-0252"
+   ],
+   "component": "libxmljs2",
+   "version": "0.37.0",
+   "nodes": [
+    ".::node_modules/libxmljs2"
+   ],
+   "project": ".",
+   "direct": false,
+   "dev_only": true,
+   "scripts": {
+    "install": "prebuild-install || node-gyp rebuild"
+   },
+   "suspicious": {},
+   "dependency_paths": [
+    [
+     "juice-shop@20.4.0-SNAPSHOT",
+     "@cyclonedx/cyclonedx-npm@4.2.1",
+     "libxmljs2@0.37.0"
+    ]
+   ],
+   "reachability": {
+    "status": "dev_or_test_only",
+    "prod": [],
+    "test": [],
+    "symbols_used": []
+   },
+   "risk_score": 0.3,
+   "priority": "Low",
+   "confidence": 0.95,
+   "score_factors": {
+    "base": 2.5,
+    "reachability": 0.3,
+    "exposure": 1.0,
+    "environment": 0.4
+   }
+  }
+ ],
+ "plans": [],
+ "validations": [],
+ "ledger": "261 records, chain intact, head=98d3deb96837"
+}

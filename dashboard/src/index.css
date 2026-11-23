@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
+@import "@xyflow/react/dist/style.css";
+
+/* Bright console theme: cool white ground, indigo for structure, severity hues reserved for risk. */
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, Menlo, Consolas, monospace;
+  --color-ground: #f5f7fb;
+  --color-panel: #ffffff;
+  --color-line: #e4e8f0;
+  --color-ink: #111827;
+  --color-ink-2: #4b5563;
+  --color-ink-3: #8a93a3;
+  --color-brand: #4f46e5;
+  --color-brand-soft: #eef0ff;
+  --color-crit: #e11d48;
+  --color-high: #f97316;
+  --color-med: #eab308;
+  --color-low: #94a3b8;
+  --color-ok: #059669;
+  --color-ai: #7c3aed;
+  --color-human: #d97706;
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--color-ground); color: var(--color-ink); font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased; font-feature-settings: "cv11", "ss01"; }
+.tnum { font-variant-numeric: tabular-nums; }
+::selection { background: #c7d2fe; }
+.react-flow__attribution { display: none; }
+@keyframes pulse-dot { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+.live-dot { animation: pulse-dot 1.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }

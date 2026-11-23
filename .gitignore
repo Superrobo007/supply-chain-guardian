@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+targets/
+out/
+out-*/
+dashboard/node_modules/
+.env
+*.key
+*.pem
