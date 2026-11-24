@@ -1,12 +1,14 @@
-#Bosch 
 # Supply Chain Guardian
 
 *Know what you build. Trust what you ship.* An agentic AI system that discovers the software supply chain of an
 application, detects vulnerabilities and suspicious changes, prioritises what actually matters, recommends
 remediations from a closed candidate set, and validates them in a sandbox. A human approves every action.
 
+
 **Target app:** OWASP Juice Shop (https://github.com/juice-shop/juice-shop).
+**2 Days hackathon**
 **Day 1 / Day 2 explainer:** [`docs/DAY_PLAN.md`](docs/DAY_PLAN.md).
+
 
 ## Quick start
 
