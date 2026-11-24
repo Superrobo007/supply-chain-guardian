@@ -6,8 +6,7 @@ remediations from a closed candidate set, and validates them in a sandbox. A hum
 
 
 **Target app:** OWASP Juice Shop (https://github.com/juice-shop/juice-shop).
-**2 Days hackathon**
-**Day 1 / Day 2 explainer:** [`docs/DAY_PLAN.md`](docs/DAY_PLAN.md).
+
 
 
 ## Quick start
