@@ -21,7 +21,7 @@ import re
 from pathlib import Path
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 from . import registry
 from .discover import dependency_paths
@@ -99,9 +99,16 @@ class Assessment(BaseModel):
     finding_id: str
     verdict: Literal["true_positive", "likely_benign", "needs_human_review"]
     adjusted_priority: Literal["Critical", "High", "Medium", "Low"]
-    confidence: float
+    confidence: float = Field(description="between 0.0 and 1.0, e.g. 0.8 means 80%")
     rationale: str
     claims: list[Claim]
+    @field_validator("confidence")
+    @classmethod
+    def _normalise_confidence(cls, v: float) -> float:
+        # small local models sometimes answer on a 0-100 scale; store 0.0-1.0 always
+        if v > 1:
+            v = v / 100
+        return round(max(0.0, min(1.0, v)), 2)
 
 
 class ClaimCheck(BaseModel):

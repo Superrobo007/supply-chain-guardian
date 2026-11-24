@@ -11,6 +11,8 @@ import { Badge, Button, Card, Empty, Input, Mono, PriorityBadge, Sheet, Tabs, Ta
 import { JobLog } from "../components/JobLog";
 
 const col = createColumnHelper<Finding>();
+// AI confidence is stored 0-1, but older local-model results may be 0-100
+const pct = (c: number) => Math.round(Math.min(100, c > 1 ? c : c * 100));
 type Go = (p: "remediation" | "graph", id?: string) => void;
 
 export default function Findings({ s, run, focus, clearFocus, go }: { s: State; run: string; focus: string | null; clearFocus: () => void; go: Go }) {
@@ -207,7 +209,7 @@ function FindingDetail({ f, s, run, go }: { f: Finding; s: State; run: string; g
               <div className="flex flex-wrap items-center gap-2">
                 <Badge className="bg-violet-50 text-violet-700 ring-violet-200">{f.assessment.mode}</Badge>
                 <span className="font-semibold">{f.assessment.verdict.replace(/_/g, " ")}</span>
-                <span className="text-ink-3">· priority {f.assessment.adjusted_priority} · confidence {Math.round(f.assessment.confidence * 100)}%</span>
+                <span className="text-ink-3">· priority {f.assessment.adjusted_priority} · confidence {pct(f.assessment.confidence)}%</span>
               </div>
               <p className="mt-2 text-ink-2">{f.assessment.rationale}</p>
               {f.assessment.skeptic_note && <p className="mt-2 text-xs text-ink-3">Skeptic: {f.assessment.skeptic_note}</p>}
