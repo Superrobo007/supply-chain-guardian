@@ -1,4 +1,4 @@
-# Supply Chain Guardian
+# Supply Chain Guardian - Team 7
 
 *Know what you build. Trust what you ship.* An agentic AI system that discovers the software supply chain of an
 application, detects vulnerabilities and suspicious changes, prioritises what actually matters, recommends
