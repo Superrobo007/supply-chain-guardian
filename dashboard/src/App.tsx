@@ -20,7 +20,7 @@ const PAGES = [
   { id: "scan", label: "New scan", icon: Radar },
 ] as const;
 type PageId = (typeof PAGES)[number]["id"];
-const HIDDEN = new Set<PageId>(["remediation", "audit"]);
+const HIDDEN = new Set<PageId>([]);
 const NAV = PAGES.filter((p) => !HIDDEN.has(p.id));
 
 const readHash = (): PageId => {
